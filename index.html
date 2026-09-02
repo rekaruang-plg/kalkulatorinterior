@@ -9,15 +9,15 @@
 <meta name="apple-mobile-web-app-title" content="Kalkulator Interior">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<title>Kalkulator Interior & PVC V5.3</title>
+<title>Kalkulator Interior & PVC V5.5</title>
 <style>
-:root{--g:#116b3a;--bg:#f5f7f5;--ln:#dce5de;--m:#66736a;--red:#a73932;--amber:#9a6700;--soft:#edf4ef;--blue:#245b8a}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:#172019}.w{max-width:1080px;margin:auto;padding:14px 14px 60px}.h,.r{display:flex;justify-content:space-between;gap:10px;align-items:center}.h{align-items:flex-start}.h h1{font-size:28px;margin:3px 0}.h p,.m{color:var(--m);font-size:12px}.headBtns{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.b,.tab{border:1px solid var(--ln);background:#fff;border-radius:11px;padding:10px 13px;font-weight:750;cursor:pointer;min-height:44px;color:#172019}.b:focus,.tab:focus,input:focus,select:focus,textarea:focus{outline:3px solid #116b3a26;outline-offset:1px}.pri,.tab.on{background:var(--g);border-color:var(--g);color:#fff}.ghost{background:transparent}.tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0}.p{display:none}.p.on{display:block}.c,.a,.rc{background:#fff;border:1px solid var(--ln);border-radius:14px;padding:14px;margin:9px 0}.g{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}label{font-size:12px;font-weight:700;color:#4b5950;display:flex;flex-direction:column;gap:5px}input,select,textarea{width:100%;border:1px solid var(--ln);border-radius:10px;padding:10px;background:#fff;font:inherit;color:#172019}textarea{min-height:74px;resize:vertical}.a summary{cursor:pointer;font-weight:800;min-height:44px;display:flex;align-items:center;justify-content:space-between;list-style:none}.a summary::-webkit-details-marker{display:none}.a summary:after{content:'▾';color:var(--m)}.a details:not([open]) summary:after{transform:rotate(-90deg)}.body{padding-top:10px}.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}.tag{font-size:11px;background:var(--soft);padding:3px 7px;border-radius:99px}.tag.warn{background:#fff2cf;color:#7e5600}.check{flex-direction:row;align-items:center;min-height:44px;padding-top:8px}.check input{width:20px;height:20px}.hint,.note,.alert{font-size:11px;color:var(--m);background:#f5f8f5;padding:9px;border-radius:9px;margin-top:9px;border:1px solid transparent}.alert{border-color:#efc5c1;background:#fff4f2;color:#84322c}.warning{border-color:#ead89b;background:#fff9e8;color:#805a00}.sum{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0}.k{background:#fff;border:1px solid var(--ln);border-radius:12px;padding:12px}.k span{font-size:10px;color:var(--m);display:block}.k b{font-size:17px}.k.t{background:var(--g);color:#fff}.k.t span{color:#d9ebdf}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.rc{margin:0;display:grid;gap:6px}.rc .top{display:flex;justify-content:space-between;gap:10px}.qty{font-size:17px;font-weight:850}.copyRow{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}.copy{width:100%}.danger{color:var(--red)}.del{margin-top:8px}.hide{display:none!important}.sticky{display:none}.set{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.grp{grid-column:1/-1;border-top:1px solid var(--ln);padding-top:10px;margin:8px 0 0}.areaCards{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px}.projectInfo{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.layoutBar{height:10px;border-radius:999px;overflow:hidden;display:flex;background:#edf0ed;margin-top:8px}.segW{background:#3c7a55}.segWall{background:#9b7d52}.segUV{background:#6b7c94}.legend{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;font-size:10px;color:var(--m)}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}.secTitle{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:14px 0 7px}.secTitle h3{margin:0;font-size:15px}.pill{font-size:10px;background:var(--soft);padding:4px 8px;border-radius:99px;color:#3d5144}.viewOnly .money{display:none}.miniActions{display:flex;gap:7px;flex-wrap:wrap}.installHelp{font-size:11px;color:var(--m);margin-top:6px}.invalidField{border-color:#ce5a50!important;background:#fff8f7!important}.autoRec{margin-top:10px;border:1px solid var(--ln);background:#f7faf7;border-radius:11px;padding:10px}.autoRec b{display:block;margin-bottom:4px}.autoRec .line{font-size:12px;color:#4f5f55;line-height:1.5}.autoRec .strong{color:var(--g);font-weight:800}.autoRec .pieces{margin-top:5px;font-size:11px;color:var(--m)}dialog{border:0;border-radius:14px;width:min(920px,95vw);padding:0}dialog::backdrop{background:#0008}.dlg{padding:16px;max-height:86vh;overflow:auto}@media(max-width:800px){.g,.set,.projectInfo{grid-template-columns:1fr 1fr}.h h1{font-size:25px}}@media(max-width:650px){body{padding-bottom:max(0px,env(safe-area-inset-bottom))}.w{padding:8px 8px 36px}.h{gap:6px}.h h1{font-size:21px}.h p{font-size:11px}.headBtns{gap:5px}.headBtns .b{padding:8px 9px;min-height:40px;font-size:12px}.tabs{position:sticky;top:0;z-index:20;background:var(--bg);padding:7px 0;margin:8px 0 0}.sticky{display:grid;position:sticky;top:59px;z-index:19;background:#fff;border:1px solid var(--ln);border-radius:12px;padding:9px 11px;margin-bottom:8px;grid-template-columns:1fr auto;box-shadow:0 4px 14px #0001}.sticky span{font-size:10px;color:var(--m)}.sticky b{grid-column:2;grid-row:1/3;color:var(--g);font-size:17px}.sticky small{font-size:9px;color:var(--m);max-width:210px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.g,.set,.cards,.areaCards,.projectInfo{grid-template-columns:1fr}.c{padding:12px}.a{padding:10px 12px}.sum{grid-template-columns:1fr 1fr}.k{padding:9px}.k b{font-size:14px}.k.t{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center}.k.t b{font-size:18px}input,select,textarea{min-height:48px;font-size:16px}.copyRow{grid-template-columns:1fr}.copyRow .b{min-height:50px}.r{flex-wrap:wrap}.layoutBar{height:12px}.secTitle{margin-top:12px}.pill{font-size:9px}}
+:root{--g:#116b3a;--bg:#f5f7f5;--ln:#dce5de;--m:#66736a;--red:#a73932;--amber:#9a6700;--soft:#edf4ef;--blue:#245b8a}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:#172019}.w{max-width:1080px;margin:auto;padding:14px 14px 60px}.h,.r{display:flex;justify-content:space-between;gap:10px;align-items:center}.h{align-items:flex-start}.h h1{font-size:28px;margin:3px 0}.h p,.m{color:var(--m);font-size:12px}.headBtns{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.b,.tab{border:1px solid var(--ln);background:#fff;border-radius:11px;padding:10px 13px;font-weight:750;cursor:pointer;min-height:44px;color:#172019}.b:focus,.tab:focus,input:focus,select:focus,textarea:focus{outline:3px solid #116b3a26;outline-offset:1px}.pri,.tab.on{background:var(--g);border-color:var(--g);color:#fff}.ghost{background:transparent}.tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0}.p{display:none}.p.on{display:block}.c,.a,.rc{background:#fff;border:1px solid var(--ln);border-radius:14px;padding:14px;margin:9px 0}.g{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}label{font-size:12px;font-weight:700;color:#4b5950;display:flex;flex-direction:column;gap:5px}input,select,textarea{width:100%;border:1px solid var(--ln);border-radius:10px;padding:10px;background:#fff;font:inherit;color:#172019}textarea{min-height:74px;resize:vertical}.a summary{cursor:pointer;font-weight:800;min-height:44px;display:flex;align-items:center;justify-content:space-between;list-style:none}.a summary::-webkit-details-marker{display:none}.a summary:after{content:'▾';color:var(--m)}.a details:not([open]) summary:after{transform:rotate(-90deg)}.body{padding-top:10px}.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}.tag{font-size:11px;background:var(--soft);padding:3px 7px;border-radius:99px}.tag.warn{background:#fff2cf;color:#7e5600}.check{flex-direction:row;align-items:center;min-height:44px;padding-top:8px}.check input{width:20px;height:20px}.hint,.note,.alert{font-size:11px;color:var(--m);background:#f5f8f5;padding:9px;border-radius:9px;margin-top:9px;border:1px solid transparent}.alert{border-color:#efc5c1;background:#fff4f2;color:#84322c}.warning{border-color:#ead89b;background:#fff9e8;color:#805a00}.sum{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0}.k{background:#fff;border:1px solid var(--ln);border-radius:12px;padding:12px}.k span{font-size:10px;color:var(--m);display:block}.k b{font-size:17px}.k.t{background:var(--g);color:#fff}.k.t span{color:#d9ebdf}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.rc{margin:0;display:grid;gap:6px}.rc .top{display:flex;justify-content:space-between;gap:10px}.qty{font-size:17px;font-weight:850}.copyRow{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}.copy{width:100%}.danger{color:var(--red)}.del{margin-top:8px}.hide{display:none!important}.sticky{display:none}.set{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.grp{grid-column:1/-1;border-top:1px solid var(--ln);padding-top:10px;margin:8px 0 0}.areaCards{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px}.projectInfo{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.layoutBar{height:10px;border-radius:999px;overflow:hidden;display:flex;background:#edf0ed;margin-top:8px}.segW{background:#3c7a55}.segWall{background:#9b7d52}.segUV{background:#6b7c94}.legend{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;font-size:10px;color:var(--m)}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}.secTitle{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:14px 0 7px}.secTitle h3{margin:0;font-size:15px}.pill{font-size:10px;background:var(--soft);padding:4px 8px;border-radius:99px;color:#3d5144}.viewOnly .money{display:none}.miniActions{display:flex;gap:7px;flex-wrap:wrap}.installHelp{font-size:11px;color:var(--m);margin-top:6px}.invalidField{border-color:#ce5a50!important;background:#fff8f7!important}.autoRec{margin-top:10px;border:1px solid var(--ln);background:#f7faf7;border-radius:11px;padding:10px}.autoRec b{display:block;margin-bottom:4px}.autoRec .line{font-size:12px;color:#4f5f55;line-height:1.5}.autoRec .strong{color:var(--g);font-weight:800}.autoRec .pieces{margin-top:5px;font-size:11px;color:var(--m)}.frameViz{position:relative;width:100%;max-width:520px;margin:10px auto 5px;border-radius:12px;overflow:hidden;background:#3c7a55;border:1px solid var(--ln);min-height:120px}.frameViz .uvInner{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#6b7c94;border:2px solid #fff8;border-radius:4px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:800;text-align:center;padding:5px}.frameViz .wallInner{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#9b7d52;border:2px solid #fff6;border-radius:5px}.frameViz .wallInner .uvInner{z-index:2}.frameLegend{text-align:center;font-size:10px;color:var(--m);margin-top:4px}.frameLegend b{color:var(--g)}dialog{border:0;border-radius:14px;width:min(920px,95vw);padding:0}dialog::backdrop{background:#0008}.dlg{padding:16px;max-height:86vh;overflow:auto}@media(max-width:800px){.g,.set,.projectInfo{grid-template-columns:1fr 1fr}.h h1{font-size:25px}}@media(max-width:650px){body{padding-bottom:max(0px,env(safe-area-inset-bottom))}.w{padding:8px 8px 36px}.h{gap:6px}.h h1{font-size:21px}.h p{font-size:11px}.headBtns{gap:5px}.headBtns .b{padding:8px 9px;min-height:40px;font-size:12px}.tabs{position:sticky;top:0;z-index:20;background:var(--bg);padding:7px 0;margin:8px 0 0}.sticky{display:grid;position:sticky;top:59px;z-index:19;background:#fff;border:1px solid var(--ln);border-radius:12px;padding:9px 11px;margin-bottom:8px;grid-template-columns:1fr auto;box-shadow:0 4px 14px #0001}.sticky span{font-size:10px;color:var(--m)}.sticky b{grid-column:2;grid-row:1/3;color:var(--g);font-size:17px}.sticky small{font-size:9px;color:var(--m);max-width:210px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.g,.set,.cards,.areaCards,.projectInfo{grid-template-columns:1fr}.c{padding:12px}.a{padding:10px 12px}.sum{grid-template-columns:1fr 1fr}.k{padding:9px}.k b{font-size:14px}.k.t{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center}.k.t b{font-size:18px}input,select,textarea{min-height:48px;font-size:16px}.copyRow{grid-template-columns:1fr}.copyRow .b{min-height:50px}.r{flex-wrap:wrap}.layoutBar{height:12px}.secTitle{margin-top:12px}.pill{font-size:9px}}
 </style>
 </head>
 <body>
 <main class="w" id="app">
 <header class="h">
-  <div><small style="color:var(--g);font-weight:800">KALKULATOR MATERIAL</small><h1>Dinding Interior & PVC</h1><p>WPC, Wallboard, UV Marble, mixing, dan PVC plafon.</p></div>
+  <div><small style="color:var(--g);font-weight:800">KALKULATOR MATERIAL</small><h1>Dinding Interior & PVC</h1><p>WPC, Wallboard, UV Marble, mixing bingkai, dan PVC plafon.</p></div>
   <div class="headBtns"><button class="b hide" id="installBtn">Pasang App</button><button class="b" id="newProject">Proyek Baru</button><button class="b" id="setBtn">Pengaturan</button></div>
 </header>
 <div class="tabs"><button class="tab on" data-tab="wall">Dinding Interior</button><button class="tab" data-tab="pvc">PVC Plafon</button></div>
@@ -68,31 +68,42 @@ function clamp(v,min,max){return Math.min(max,Math.max(min,v))}
 function wallModule(a){return a.wallType==='60-8'?.6:.4}
 function autoSplit(a){
   const total=n(a.w),mode=a.mode,module=wallModule(a),minEdge=total>=1.8?.48:Math.max(.24,total*.15);
-  if(!total)return{p:0,w:0,u:0,total:0,invalid:false,auto:true,wallAcross:0,uvAcross:0,edgeEach:0};
-  if(mode==='wall')return{p:0,w:total,u:0,total,invalid:false,auto:true,wallAcross:Math.ceil(total/module),uvAcross:0,edgeEach:0};
-  if(mode==='uv')return{p:0,w:0,u:total,total,invalid:false,auto:true,wallAcross:0,uvAcross:Math.ceil(total/1.2),edgeEach:0};
-  if(mode==='wpc')return{p:total,w:0,u:0,total,invalid:false,auto:true,wallAcross:0,uvAcross:0,edgeEach:0};
+  if(!total)return{p:0,w:0,u:0,total:0,invalid:false,auto:true,wallAcross:0,uvAcross:0,edgeEach:0,nested:false};
+  if(mode==='wall')return{p:0,w:total,u:0,total,invalid:false,auto:true,wallAcross:Math.ceil(total/module),uvAcross:0,edgeEach:0,nested:false};
+  if(mode==='uv')return{p:0,w:0,u:total,total,invalid:false,auto:true,wallAcross:0,uvAcross:Math.ceil(total/1.2),edgeEach:0,nested:false};
+  if(mode==='wpc')return{p:total,w:0,u:0,total,invalid:false,auto:true,wallAcross:0,uvAcross:0,edgeEach:0,nested:false};
+
+  // Mixing tiga material dibuat bertingkat:
+  // UV mengambil area dari bidang Wallboard, lalu WPC menjadi bidang paling luar.
+  if(mode==='wpc-wall-uv'){
+    const minOuter=Math.max(.16,Math.min(.28,total*.07));
+    const maxUV=Math.floor((total-2*module-2*minOuter+1e-9)/1.2);
+    if(maxUV<1)return{p:total,w:0,u:0,total,invalid:true,auto:true,nested:true,
+      reason:`Dinding terlalu sempit. Untuk pola UV → Wallboard → WPC dibutuhkan minimal 1,2 m UV + ${fm(module)} m Wallboard di kiri dan kanan + ruang WPC di sisi luar.`};
+    const uvAcross=clamp(Math.round((total*.40)/1.2),1,maxUV);
+    const uv=Number((uvAcross*1.2).toFixed(3));
+    const wallSideEach=module; // satu modul Wallboard di tiap sisi UV
+    const wallOuter=Number((uv+2*wallSideEach).toFixed(3));
+    const p=Math.max(0,total-wallOuter),edgeEach=p/2;
+    return{
+      p,w:wallOuter,u:uv,total,needed:wallOuter,invalid:edgeEach<minOuter,auto:true,nested:true,
+      wallAcross:0,uvAcross,edgeEach,minEdge:minOuter,wallOuter,wallSideEach,
+      wallVisibleWidth:Math.max(0,wallOuter-uv)
+    };
+  }
+
   const available=Math.max(0,total-2*minEdge);
   let wall=0,uv=0,wallAcross=0,uvAcross=0;
   if(mode==='wpc-wall'){
-    const max=Math.floor((available+1e-9)/module); if(max<1)return{p:total,w:0,u:0,total,invalid:true,auto:true,reason:'Dinding terlalu sempit untuk kombinasi WPC + Wallboard.'};
+    const max=Math.floor((available+1e-9)/module); if(max<1)return{p:total,w:0,u:0,total,invalid:true,auto:true,nested:false,reason:'Dinding terlalu sempit untuk kombinasi WPC + Wallboard.'};
     wallAcross=clamp(Math.round((total*.36)/module),1,max); wall=Number((wallAcross*module).toFixed(3));
   }
   if(mode==='wpc-uv'){
-    const max=Math.floor((available+1e-9)/1.2); if(max<1)return{p:total,w:0,u:0,total,invalid:true,auto:true,reason:'Dinding terlalu sempit untuk kombinasi WPC + UV Marble.'};
+    const max=Math.floor((available+1e-9)/1.2); if(max<1)return{p:total,w:0,u:0,total,invalid:true,auto:true,nested:false,reason:'Dinding terlalu sempit untuk kombinasi WPC + UV Marble.'};
     uvAcross=clamp(Math.round((total*.38)/1.2),1,max); uv=Number((uvAcross*1.2).toFixed(3));
   }
-  if(mode==='wpc-wall-uv'){
-    const maxUV=Math.floor((available-module+1e-9)/1.2); if(maxUV<1)return{p:total,w:0,u:0,total,invalid:true,auto:true,reason:'Dinding terlalu sempit untuk kombinasi tiga material.'};
-    uvAcross=clamp(Math.round((total*.27)/1.2),1,maxUV); uv=Number((uvAcross*1.2).toFixed(3));
-    const remain=Math.max(0,available-uv),maxWall=Math.floor((remain+1e-9)/module); if(maxWall<1)return{p:total,w:0,u:0,total,invalid:true,auto:true,reason:'Sisa lebar belum cukup untuk Wallboard dan WPC.'};
-    const targetInsert=total*.52,desired=Math.max(module,targetInsert-uv);
-    wallAcross=clamp(Math.round(desired/module),1,maxWall);
-    if(module===.4 && maxWall>=2 && wallAcross===1)wallAcross=2;
-    wall=Number((wallAcross*module).toFixed(3));
-  }
   const p=Math.max(0,total-wall-uv),edgeEach=p/2;
-  return{p,w:wall,u:uv,total,needed:wall+uv,invalid:p<=0||edgeEach<Math.min(.24,minEdge*.65),auto:true,wallAcross,uvAcross,edgeEach,minEdge};
+  return{p,w:wall,u:uv,total,needed:wall+uv,invalid:p<=0||edgeEach<Math.min(.24,minEdge*.65),auto:true,nested:false,wallAcross,uvAcross,edgeEach,minEdge};
 }
 function split(a){return autoSplit(a)}
 function bill(area,q){return $('round').value==='ceil'?Math.ceil(area/Math.max(1,q))*Math.max(1,q):area}
@@ -121,6 +132,138 @@ function linearStockCount(runs,height,stockLen,wastePct,shortReservePct=0){
   if(shortReservePct>0 && height<=stockLen+eps && cutsPerStock>1)pieces=Math.ceil(pieces*(1+pct(shortReservePct)));
   const joins=Math.max(0,Math.ceil(height/stockLen)-1);
   return{pieces,runs,linear,targetLinear,offcut:Math.max(0,pieces*stockLen-linear),joins,cutsPerStock,fullPerRun,remainder};
+}
+function packStockSegments(lengths,stockLen,wastePct=0){
+  stockLen=n(stockLen);const eps=1e-9,src=(lengths||[]).map(n).filter(v=>v>eps);
+  if(!src.length||!stockLen)return{pieces:0,linear:0,targetLinear:0,offcut:0,segments:0,bins:0};
+  const linear=src.reduce((a,b)=>a+b,0),remainders=[];let fixed=0;
+  src.forEach(len=>{
+    const full=Math.floor((len+eps)/stockLen);fixed+=full;
+    const rem=len-full*stockLen;if(rem>eps)remainders.push(rem);
+  });
+  remainders.sort((a,b)=>b-a);
+  const bins=[];
+  remainders.forEach(len=>{
+    let best=-1,bestRemain=Infinity;
+    for(let i=0;i<bins.length;i++){
+      const after=bins[i]-len;
+      if(after>=-eps&&after<bestRemain){best=i;bestRemain=after}
+    }
+    if(best<0)bins.push(stockLen-len);else bins[best]-=len;
+  });
+  const basePieces=fixed+bins.length,targetLinear=linear*(1+pct(wastePct));
+  const pieces=Math.max(basePieces,Math.ceil((targetLinear-eps)/stockLen));
+  return{pieces,linear,targetLinear,offcut:Math.max(0,pieces*stockLen-linear),segments:src.length,bins:bins.length,fixed};
+}
+function wcRects(rects,q,hollow){
+  q=Math.max(1,Math.round(n(q)||1));
+  const clean=(rects||[]).map(r=>({width:n(r.width),height:n(r.height),role:r.role||''})).filter(r=>r.width>0&&r.height>0);
+  if(!clean.length)return{a:0,rate:hollow?S.laborHollow:S.laborNoHollow,rawLabor:0,l:0,boards:0,clips:0,fish:0,hol:0,warn:'',cut:null,runs:0,frame:true,rects:[]};
+  const segments=[];let area=0,fish=0,runs=0,clipBase=0;
+  clean.forEach(r=>{
+    const rr=Math.ceil((r.width-1e-9)/S.wpcWidth)*q;
+    runs+=rr;area+=r.width*r.height*q;
+    for(let i=0;i<rr;i++){segments.push(r.height);clipBase+=Math.ceil(r.height)+1}
+    fish+=Math.ceil(r.width/.75)*q;
+  });
+  const cut=packStockSegments(segments,S.wpcLen,S.wpcWastePct);
+  const clips=Math.ceil(clipBase*1.05),rate=hollow?S.laborHollow:S.laborNoHollow;
+  return{a:area,rate,rawLabor:area*rate,l:area*rate,boards:cut.pieces,clips,fish,
+    hol:hollow?Math.ceil(area*S.hollowPerM2):0,warn:clean.some(r=>r.height>S.wpcLen)?`Ada bidang WPC lebih panjang dari ${fm(S.wpcLen)} m — sambungan memakai optimasi sisa potongan.`:'',
+    cut,runs,frame:true,rects:clean,segments};
+}
+
+function wallRects(rects,q,type){
+  q=Math.max(1,Math.round(n(q)||1));
+  const panelW=type==='60-8'?.6:.4,price=type==='40-8'?S.wall40_8Price:type==='60-8'?S.wall60Price:S.wall40_7Price;
+  const clean=(rects||[]).map(r=>({width:n(r.width),height:n(r.height),role:r.role||''})).filter(r=>r.width>0&&r.height>0);
+  if(!clean.length)return{a:0,rate:S.wallLabor,rawLabor:0,l:0,pan:0,price,warn:'',cut:null,runs:0,frame:true,rects:[]};
+  const segments=[];let area=0,runs=0;
+  clean.forEach(r=>{
+    const rr=Math.ceil((r.width-1e-9)/panelW)*q;
+    runs+=rr;area+=r.width*r.height*q;
+    for(let i=0;i<rr;i++)segments.push(r.height);
+  });
+  const cut=packStockSegments(segments,S.wallLen,S.wallWastePct);
+  return{
+    a:area,rate:S.wallLabor,rawLabor:area*S.wallLabor,l:area*S.wallLabor,pan:cut.pieces,price,
+    warn:clean.some(r=>r.height>S.wallLen)?`Ada bidang Wallboard lebih panjang dari ${fm(S.wallLen)} m — sambungan memakai optimasi sisa potongan.`:'',
+    cut,runs,frame:true,rects:clean,panelW
+  };
+}
+function tripleWallGeometry(a,s,accentHeight){
+  const H=n(a.h),gap=Math.max(0,H-accentHeight),top=gap/2,bottom=gap-top,side=n(s.wallSideEach),rects=[];
+  if(side>1e-9){
+    rects.push({width:side,height:H,role:'Wallboard kiri UV'});
+    rects.push({width:side,height:H,role:'Wallboard kanan UV'});
+  }
+  if(top>1e-9)rects.push({width:s.u,height:top,role:'Wallboard atas UV'});
+  if(bottom>1e-9)rects.push({width:s.u,height:bottom,role:'Wallboard bawah UV'});
+  return{accentHeight,top,bottom,side,rects,uvWidth:s.u,wallOuter:s.wallOuter,edgeEach:s.edgeEach};
+}
+function tripleMixChoice(a,s,q){
+  const types=a.uvType==='24'?[[2.4,S.uv24Price]]:a.uvType==='29'?[[2.9,S.uv29Price]]:[[2.4,S.uv24Price],[2.9,S.uv29Price]];
+  let best=null;
+  types.forEach(([len,price])=>{
+    const u=uvAccentVariant(s.u,n(a.h),q,len,price,s.uvAcross);
+    const geom=tripleWallGeometry(a,s,u.accentHeight);
+    const w=wallRects(geom.rects,q,a.wallType);
+    const p=wc([s.edgeEach,s.edgeEach],n(a.h),q,a.hollow);
+    const wpcCost=p.boards*S.wpcPrice+p.clips*S.clipPrice+Math.ceil(p.boards/14)*S.siliconePrice+Math.ceil(p.boards/18)*S.koreaPrice+p.fish*S.fisherPrice+p.hol*S.hollowPrice;
+    const wallCost=w.pan*w.price;
+    // Auto memilih biaya material paling efisien, namun UV tetap "memotong" bidang Wallboard.
+    const score=u.cost+wallCost+wpcCost;
+    const candidate={u,w,p,geom,score};
+    if(!best||score<best.score)best=candidate;
+  });
+  return best;
+}
+function uvAccentVariant(width,wallH,q,len,price,acrossOverride=0){
+  width=n(width);wallH=n(wallH);q=Math.max(1,Math.round(n(q)||1));
+  if(!width||!wallH)return{a:0,rate:S.uvLabor,rawLabor:0,l:0,sheets:0,price,len,warn:'',cut:null,runs:0,cost:0,isAccent:true,accentHeight:0,across:0};
+  const across=Math.max(1,Math.round(n(acrossOverride)||Math.ceil((width-1e-9)/1.2))),runs=across*q;
+  const accentHeight=Math.min(wallH,len);
+  const cut=linearStockCount(runs,accentHeight,len,0,0);
+  const area=width*accentHeight*q;
+  return{a:area,rate:S.uvLabor,rawLabor:area*S.uvLabor,l:area*S.uvLabor,sheets:cut.pieces,price,len,cost:cut.pieces*price,
+    warn:'',cut,runs,across,isAccent:true,accentHeight};
+}
+function mixedUVGeometry(a,s,accentHeight){
+  const H=n(a.h),gap=Math.max(0,H-accentHeight),top=gap/2,bottom=gap-top,rects=[];
+  if(s.edgeEach>0){rects.push({width:s.edgeEach,height:H,role:'kiri UV'});rects.push({width:s.edgeEach,height:H,role:'kanan UV'})}
+  if(top>1e-9)rects.push({width:s.u,height:top,role:'atas UV'});
+  if(bottom>1e-9)rects.push({width:s.u,height:bottom,role:'bawah UV'});
+  return{accentHeight,top,bottom,rects,uvWidth:s.u,edgeEach:s.edgeEach};
+}
+function mixedUVChoice(a,s,q){
+  const types=a.uvType==='24'?[[2.4,S.uv24Price]]:a.uvType==='29'?[[2.9,S.uv29Price]]:[[2.4,S.uv24Price],[2.9,S.uv29Price]];
+  let best=null;
+  types.forEach(([len,price])=>{
+    const u=uvAccentVariant(s.u,n(a.h),q,len,price,s.uvAcross),geom=mixedUVGeometry(a,s,u.accentHeight),p=wcRects(geom.rects,q,a.hollow);
+    const wpcCost=p.boards*S.wpcPrice+p.clips*S.clipPrice+Math.ceil(p.boards/14)*S.siliconePrice+Math.ceil(p.boards/18)*S.koreaPrice+p.fish*S.fisherPrice+p.hol*S.hollowPrice;
+    const score=u.cost+wpcCost,candidate={u,p,geom,score};if(!best||score<best.score)best=candidate;
+  });
+  return best;
+}
+function framePreview(a,s,geom,u){
+  if(a.mode!=='wpc-uv'||!geom||!n(a.w)||!n(a.h))return layoutBar(s);
+  const W=n(a.w),H=n(a.h),uw=Math.min(100,100*s.u/W),uh=Math.min(100,100*u.accentHeight/H);
+  return `<div class="frameViz" style="aspect-ratio:${Math.max(.4,W/H)}"><div class="uvInner" style="width:${uw}%;height:${uh}%">UV ${fm(s.u)}×${fm(u.accentHeight)} m</div></div><div class="frameLegend"><b>WPC membingkai UV</b> · kiri/kanan ±${fm(s.edgeEach)} m${geom.top>0?` · atas/bawah ±${fm(geom.top)} m`:''}</div>`;
+}
+
+function triplePreview(a,s,geom,u){
+  if(a.mode!=='wpc-wall-uv'||!geom||!n(a.w)||!n(a.h))return layoutBar(s);
+  const W=n(a.w),H=n(a.h);
+  const wallW=Math.min(100,100*n(s.wallOuter)/W);
+  const wallH=100;
+  const uvW=Math.min(100,100*s.u/n(s.wallOuter||1));
+  const uvH=Math.min(100,100*u.accentHeight/H);
+  return `<div class="frameViz" style="aspect-ratio:${Math.max(.4,W/H)}">
+    <div class="wallInner" style="width:${wallW}%;height:${wallH}%">
+      <div class="uvInner" style="width:${uvW}%;height:${uvH}%">UV ${fm(s.u)}×${fm(u.accentHeight)} m</div>
+    </div>
+  </div>
+  <div class="frameLegend"><b>UV → Wallboard → WPC</b> · UV mengambil bidang dari Wallboard · Wallboard kiri/kanan ${fm(s.wallSideEach)} m${geom.top>0?` + atas/bawah ±${fm(geom.top)} m`:''} · WPC luar ±${fm(s.edgeEach)} m/sisi</div>`;
 }
 function wpcRunCount(sectionWidths,q){
   const widths=(Array.isArray(sectionWidths)?sectionWidths:[sectionWidths]).map(n).filter(Boolean);
@@ -164,11 +307,22 @@ function uvc(width,h,q,type,acrossOverride=0){
 function ac(a){
   const width=n(a.w),height=n(a.h),q=Math.max(1,Math.round(n(a.q)||1)),s=split(a);
   if(s.invalid)return{...a,width,height,q,s,invalid:true,area:width*height*q,l:0,warns:[]};
-  const sections=a.mode.startsWith('wpc-')?[s.edgeEach,s.edgeEach]:[s.p];
-  const p=wc(sections,height,q,a.hollow),w=wallc(s.w,height,q,a.wallType,s.wallAcross),u=uvc(s.u,height,q,a.uvType,s.uvAcross);
+  let p,w,u,uvGeom=null,triple=false;
+  if(a.mode==='wpc-wall-uv'){
+    const mix=tripleMixChoice(a,s,q);
+    p=mix.p;w=mix.w;u=mix.u;uvGeom=mix.geom;triple=true;
+  }else if(a.mode==='wpc-uv'){
+    const mix=mixedUVChoice(a,s,q);
+    p=mix.p;u=mix.u;uvGeom=mix.geom;
+    w=wallc(0,height,q,a.wallType,0);
+  }else{
+    w=wallc(s.w,height,q,a.wallType,s.wallAcross);
+    const sections=a.mode.startsWith('wpc-')?[s.edgeEach,s.edgeEach]:[s.p];
+    p=wc(sections,height,q,a.hollow);u=uvc(s.u,height,q,a.uvType,s.uvAcross);
+  }
   const area=width*height*q,rawLabor=p.rawLabor+w.rawLabor+u.rawLabor,billedArea=bill(area,q);
   const avgRate=area?rawLabor/area:0,roundAdj=Math.max(0,billedArea-area)*avgRate,l=rawLabor+roundAdj;
-  return{...a,width,height,q,s,p,w,u,invalid:false,area,l,rawLabor,billedArea,roundAdj,warns:[p.warn,w.warn,u.warn].filter(Boolean)};
+  return{...a,width,height,q,s,p,w,u,uvGeom,triple,invalid:false,area,l,rawLabor,billedArea,roundAdj,warns:[p.warn,w.warn,u.warn].filter(Boolean)};
 }
 function addItem(map,name,qty,unit,price){qty=Math.ceil(n(qty));if(!qty)return;const k=name+'|'+price;if(!map[k])map[k]=[name,0,unit,price];map[k][1]+=qty}
 function calcW(){
@@ -187,20 +341,33 @@ function layoutBar(s){const total=s.total||1;return `<div class="layoutBar">${s.
 function autoRecText(a,s){
   if(!n(a.w))return '';
   if(s.invalid)return `<div class="alert"><b>Kombinasi otomatis belum cocok.</b><br>${esc(s.reason||'Lebar dinding terlalu sempit untuk menjaga komposisi yang rapi.')}</div>`;
-  const bits=[];
-  if(s.wallAcross)bits.push(`<span class="strong">${s.wallAcross} modul Wallboard</span> × ${fm(wallModule(a))} m = ${fm(s.w)} m`);
-  if(s.uvAcross)bits.push(`<span class="strong">${s.uvAcross} modul UV</span> × 1,2 m = ${fm(s.u)} m`);
-  if(s.p&&a.mode!=='wpc')bits.push(`<span class="strong">WPC sisa ${fm(s.p)} m</span>${a.mode.startsWith('wpc-')?` → ± ${fm(s.edgeEach)} m kanan + ${fm(s.edgeEach)} m kiri`:''}`);
-  if(a.mode==='wpc')bits.push(`<span class="strong">Full WPC</span> · lebar ${fm(s.p)} m`);
-  if(a.mode==='wall')bits.push(`<span class="strong">Full Wallboard</span> · ${s.wallAcross} modul lebar`);
-  if(a.mode==='uv')bits.push(`<span class="strong">Full UV Marble</span> · ${s.uvAcross} modul lebar`);
-  const h=n(a.h),q=Math.max(1,Math.round(n(a.q)||1));let pieces='';
-  if(h){
-    const est=[],sections=a.mode.startsWith('wpc-')?[s.edgeEach,s.edgeEach]:[s.p];
-    if(s.p){const z=wc(sections,h,q,a.hollow);est.push(`WPC ± ${z.boards} keping`)}
-    if(s.w){const z=wallc(s.w,h,q,a.wallType,s.wallAcross);est.push(`Wallboard ± ${z.pan} keping`)}
-    if(s.u){const z=uvc(s.u,h,q,a.uvType,s.uvAcross);est.push(`UV ± ${z.sheets} lembar`)}
-    if(est.length)pieces=`Estimasi kebutuhan setelah optimasi potongan: ${est.join(' · ')}. Sisa potongan panjang dipakai ulang untuk sambungan bila ukurannya mencukupi; waste diterapkan setelah total kebutuhan panjang dijumlahkan.`
+  const bits=[],h=n(a.h),q=Math.max(1,Math.round(n(a.q)||1));let pieces='';
+
+  if(a.mode==='wpc-wall-uv'){
+    const mix=tripleMixChoice(a,s,q),u=mix.u,g=mix.geom;
+    bits.push(`<span class="strong">${s.uvAcross} bidang UV</span> × 1,2×${fm(u.accentHeight)} m di tengah`);
+    bits.push(`<span class="strong">Wallboard bingkai UV</span> ${fm(s.wallSideEach)} m kiri + ${fm(s.wallSideEach)} m kanan${g.top>0?` + ±${fm(g.top)} m atas/bawah`:''}`);
+    bits.push(`<span class="strong">WPC luar</span> ±${fm(s.edgeEach)} m kanan + ${fm(s.edgeEach)} m kiri`);
+    if(h)pieces=`Estimasi kebutuhan: WPC ± ${mix.p.boards} keping · Wallboard ± ${mix.w.pan} keping · UV ± ${u.sheets} lembar. UV mengambil area dari bidang Wallboard, jadi area UV tidak dihitung lagi sebagai Wallboard. Potongan Wallboard/WPC dioptimalkan dari sisa material.`;
+  }else if(a.mode==='wpc-uv'&&s.u){
+    const mix=mixedUVChoice(a,s,q),u=mix.u,g=mix.geom;
+    bits.push(`<span class="strong">${s.uvAcross} bidang UV</span> × 1,2×${fm(u.accentHeight)} m`);
+    bits.push(`<span class="strong">WPC bingkai</span> kiri/kanan ±${fm(s.edgeEach)} m${g.top>0?` + atas/bawah ±${fm(g.top)} m`:''}`);
+    if(h)pieces=`Estimasi kebutuhan: WPC ± ${mix.p.boards} keping · UV ± ${u.sheets} lembar. UV tidak ditumpuk vertikal; sisa tinggi dinding di sekitar UV diisi potongan WPC dan potongan WPC dioptimalkan dari batang 3 m.`;
+  }else{
+    if(s.wallAcross)bits.push(`<span class="strong">${s.wallAcross} modul Wallboard</span> × ${fm(wallModule(a))} m = ${fm(s.w)} m`);
+    if(s.uvAcross)bits.push(`<span class="strong">${s.uvAcross} modul UV</span> × 1,2 m = ${fm(s.u)} m`);
+    if(s.p&&a.mode!=='wpc')bits.push(`<span class="strong">WPC sisa ${fm(s.p)} m</span>${a.mode.startsWith('wpc-')?` → ± ${fm(s.edgeEach)} m kanan + ${fm(s.edgeEach)} m kiri`:''}`);
+    if(a.mode==='wpc')bits.push(`<span class="strong">Full WPC</span> · lebar ${fm(s.p)} m`);
+    if(a.mode==='wall')bits.push(`<span class="strong">Full Wallboard</span> · ${s.wallAcross} modul lebar`);
+    if(a.mode==='uv')bits.push(`<span class="strong">Full UV Marble</span> · ${s.uvAcross} modul lebar`);
+    if(h){
+      const est=[],sections=a.mode.startsWith('wpc-')?[s.edgeEach,s.edgeEach]:[s.p];
+      if(s.p){const z=wc(sections,h,q,a.hollow);est.push(`WPC ± ${z.boards} keping`)}
+      if(s.w){const z=wallc(s.w,h,q,a.wallType,s.wallAcross);est.push(`Wallboard ± ${z.pan} keping`)}
+      if(s.u){const z=uvc(s.u,h,q,a.uvType,s.uvAcross);est.push(`UV ± ${z.sheets} lembar`)}
+      if(est.length)pieces=`Estimasi kebutuhan setelah optimasi potongan: ${est.join(' · ')}. Sisa potongan panjang dipakai ulang untuk sambungan bila ukurannya mencukupi.`;
+    }
   }
   return `<div class="autoRec"><b>Rekomendasi kombinasi otomatis</b><div class="line">${bits.join(' · ')}</div><div class="pieces">${pieces}</div></div>`;
 }
@@ -213,7 +380,7 @@ function renderA(){
     ${hasU(a.mode)?`<label>Tipe UV<select data-k="uvType"><option value="auto" ${a.uvType==='auto'?'selected':''}>Auto paling hemat</option><option value="24" ${a.uvType==='24'?'selected':''}>1,2×2,4</option><option value="29" ${a.uvType==='29'?'selected':''}>1,2×2,9</option></select></label>`:''}
   </div>
   ${hasP(a.mode)?`<label class="check"><input data-k="hollow" type="checkbox" ${a.hollow?'checked':''}>Pakai hollow — jasa ${rp(a.hollow?S.laborHollow:S.laborNoHollow)}/m²</label>`:''}
-  ${n(a.w)?layoutBar(s):''}
+  ${n(a.w)?(a.mode==='wpc-wall-uv'&&n(a.h)?(()=>{const mix=tripleMixChoice(a,s,Math.max(1,Math.round(n(a.q)||1)));return triplePreview(a,s,mix.geom,mix.u)})():a.mode==='wpc-uv'&&n(a.h)?(()=>{const mix=mixedUVChoice(a,s,Math.max(1,Math.round(n(a.q)||1)));return framePreview(a,s,mix.geom,mix.u)})():layoutBar(s)):''}
   ${autoRecText(a,s)}
   ${A.length>1?`<button class="b danger del" data-del="${a.id}">Hapus area</button>`:''}
 </div></details></div>`}).join('');
@@ -241,9 +408,9 @@ function areaMaterialLines(x,withPrice=true,prefix='  '){
 }
 function areaCutLines(x,prefix='  '){
   const out=[];
-  if(x.p.cut&&x.p.boards)out.push(`${prefix}Optimasi WPC: ${x.p.runs} jalur × ${fm(x.height)} m = ${fm(x.p.cut.linear)} m lari → ${x.p.boards} keping @${fm(S.wpcLen)} m`);
-  if(x.w.cut&&x.w.pan)out.push(`${prefix}Optimasi Wallboard: ${x.w.runs} jalur × ${fm(x.height)} m = ${fm(x.w.cut.linear)} m lari → ${x.w.pan} keping @${fm(S.wallLen)} m`);
-  if(x.u.cut&&x.u.sheets)out.push(`${prefix}Optimasi UV: ${x.u.runs} jalur × ${fm(x.height)} m = ${fm(x.u.cut.linear)} m lari → ${x.u.sheets} lembar @${fm(x.u.len)} m`);
+  if(x.p.cut&&x.p.boards){if(x.p.frame)out.push(`${prefix}Optimasi WPC bingkai: ${fm(x.p.cut.linear)} m total potongan/jalur → ${x.p.boards} keping WPC @${fm(S.wpcLen)} m`);else out.push(`${prefix}Optimasi WPC: ${x.p.runs} jalur × ${fm(x.height)} m = ${fm(x.p.cut.linear)} m lari → ${x.p.boards} keping @${fm(S.wpcLen)} m`)}
+  if(x.w.cut&&x.w.pan){if(x.w.frame)out.push(`${prefix}Optimasi Wallboard bingkai: ${fm(x.w.cut.linear)} m total potongan/jalur → ${x.w.pan} keping @${fm(S.wallLen)} m`);else out.push(`${prefix}Optimasi Wallboard: ${x.w.runs} jalur × ${fm(x.height)} m = ${fm(x.w.cut.linear)} m lari → ${x.w.pan} keping @${fm(S.wallLen)} m`);}
+  if(x.u.cut&&x.u.sheets){if(x.u.isAccent)out.push(`${prefix}UV aksen: ${x.u.across} bidang × 1,2×${fm(x.u.accentHeight)} m → ${x.u.sheets} lembar stok 1,2×${fm(x.u.len)} m`);else out.push(`${prefix}Optimasi UV: ${x.u.runs} jalur × ${fm(x.height)} m = ${fm(x.u.cut.linear)} m lari → ${x.u.sheets} lembar @${fm(x.u.len)} m`)}
   return out;
 }
 function activeLaborParts(x){
@@ -267,9 +434,19 @@ function areaLaborLines(x,prefix='  '){
 function areaLayoutLine(x,prefix='  '){
   const s=x.s;if(!s||x.mode==='wpc'||x.mode==='wall'||x.mode==='uv')return '';
   const parts=[];
-  if(s.wallAcross)parts.push(`Wallboard ${s.wallAcross} modul × ${fm(wallModule(x))} m = ${fm(s.w)} m`);
-  if(s.uvAcross)parts.push(`UV ${s.uvAcross} modul × 1,2 m = ${fm(s.u)} m`);
-  if(s.p)parts.push(`WPC sisa ${fm(s.p)} m = ±${fm(s.edgeEach)} m kanan + ${fm(s.edgeEach)} m kiri`);
+  if(x.mode==='wpc-wall-uv'){
+    parts.push(`UV ${s.uvAcross} bidang × 1,2×${fm(x.u.accentHeight)} m di tengah`);
+    parts.push(`Wallboard membingkai UV: ${fm(s.wallSideEach)} m kiri + ${fm(s.wallSideEach)} m kanan${x.uvGeom&&x.uvGeom.top>0?` + ±${fm(x.uvGeom.top)} m atas/bawah`:''}`);
+    parts.push(`WPC luar: ±${fm(s.edgeEach)} m kanan + ${fm(s.edgeEach)} m kiri`);
+    parts.push(`UV mengambil area dari Wallboard, bukan ditambah di luar luas Wallboard`);
+  }else if(x.mode==='wpc-uv'&&x.u&&x.u.isAccent){
+    parts.push(`UV ${s.uvAcross} bidang × 1,2×${fm(x.u.accentHeight)} m`);
+    parts.push(`WPC bingkai kiri/kanan ±${fm(s.edgeEach)} m${x.uvGeom&&x.uvGeom.top>0?` + atas/bawah ±${fm(x.uvGeom.top)} m`:''}`);
+  }else{
+    if(s.wallAcross)parts.push(`Wallboard ${s.wallAcross} modul × ${fm(wallModule(x))} m = ${fm(s.w)} m`);
+    if(s.uvAcross)parts.push(`UV ${s.uvAcross} modul × 1,2 m = ${fm(s.u)} m`);
+    if(s.p)parts.push(`WPC sisa ${fm(s.p)} m = ±${fm(s.edgeEach)} m kanan + ${fm(s.edgeEach)} m kiri`);
+  }
   return prefix+'Rekomendasi otomatis: '+parts.join(' · ');
 }
 function areaCopyBlock(x,withPrice=true,withLabor=true,includeCut=true){
@@ -301,15 +478,13 @@ function areaCardDetails(x,needs){
   const mat=[];
   if(x.p.boards)mat.push(`<div class="m">WPC: <b>${fm(x.p.boards)} keping</b>${needs?'':` × ${rp(S.wpcPrice)} = <b>${rp(x.p.boards*S.wpcPrice)}</b>`}</div>`);
   if(x.w.pan)mat.push(`<div class="m">${wallLabel(x)}: <b>${fm(x.w.pan)} keping</b>${needs?'':` × ${rp(x.w.price)} = <b>${rp(x.w.pan*x.w.price)}</b>`}</div>`);
-  if(x.u.sheets)mat.push(`<div class="m">UV Marble: <b>${fm(x.u.sheets)} lembar</b>${needs?'':` × ${rp(x.u.price)} = <b>${rp(x.u.sheets*x.u.price)}</b>`}</div>`);
+  if(x.u.sheets)mat.push(`<div class="m">UV Marble 1,2×${x.u.len===2.4?'2,4':'2,9'}: <b>${fm(x.u.sheets)} lembar</b>${needs?'':` × ${rp(x.u.price)} = <b>${rp(x.u.sheets*x.u.price)}</b>`}</div>`);
   if(x.p.hol)mat.push(`<div class="m">Hollow: <b>${fm(x.p.hol)} batang</b>${needs?'':` × ${rp(S.hollowPrice)} = <b>${rp(x.p.hol*S.hollowPrice)}</b>`}</div>`);
   const cuts=[];
-  if(x.p.cut&&x.p.boards)cuts.push(`<div class="m">WPC ${fm(x.p.cut.linear)} m lari → ${x.p.boards} keping @${fm(S.wpcLen)} m</div>`);
-  if(x.w.cut&&x.w.pan)cuts.push(`<div class="m">Wallboard ${fm(x.w.cut.linear)} m lari → ${x.w.pan} keping @${fm(S.wallLen)} m</div>`);
-  if(x.u.cut&&x.u.sheets)cuts.push(`<div class="m">UV ${fm(x.u.cut.linear)} m lari → ${x.u.sheets} lembar @${fm(x.u.len)} m</div>`);
-  const lab=[];
-  if(!needs)areaLaborLines(x,'').forEach(t=>lab.push(`<div class="m">${esc(t)}</div>`));
-  return mat.join('')+cuts.join('')+lab.join('');
+  if(x.p.cut&&x.p.boards)cuts.push(`<div class="m">${x.p.frame?'WPC bingkai':'WPC'} ${fm(x.p.cut.linear)} m total potongan → ${x.p.boards} keping @${fm(S.wpcLen)} m</div>`);
+  if(x.w.cut&&x.w.pan)cuts.push(`<div class="m">${x.w.frame?'Wallboard bingkai':'Wallboard'} ${fm(x.w.cut.linear)} m total potongan → ${x.w.pan} keping @${fm(S.wallLen)} m</div>`);
+  if(x.u.cut&&x.u.sheets)cuts.push(`<div class="m">${x.u.isAccent?`UV aksen ${x.u.across} bidang × 1,2×${fm(x.u.accentHeight)} m`:`UV ${fm(x.u.cut.linear)} m lari`} → ${x.u.sheets} lembar stok 1,2×${fm(x.u.len)} m</div>`);
+  const lab=[];if(!needs)areaLaborLines(x,'').forEach(t=>lab.push(`<div class="m">${esc(t)}</div>`));return mat.join('')+cuts.join('')+lab.join('');
 }
 function renderW(){
   const r=calcW(),needs=$('viewMode').value==='needs';$('app').classList.toggle('viewOnly',needs);

@@ -5,7 +5,6 @@
   "display": "standalone",
   "background_color": "#f5f7f5",
   "theme_color": "#116b3a",
-  "description": "Kalkulator kebutuhan WPC, Wallboard, UV Marble, mixing material, dan PVC plafon.",
   "icons": [
     {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
   ]
