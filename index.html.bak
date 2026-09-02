@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#116b3a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Kalkulator Interior">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<title>Kalkulator Interior & PVC</title>
+<style>
+:root{--g:#116b3a;--bg:#f5f7f5;--ln:#dce5de;--m:#66736a;--red:#a73932;--amber:#9a6700;--soft:#edf4ef;--blue:#245b8a}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:#172019}.w{max-width:1080px;margin:auto;padding:14px 14px 60px}.h,.r{display:flex;justify-content:space-between;gap:10px;align-items:center}.h{align-items:flex-start}.h h1{font-size:28px;margin:3px 0}.h p,.m{color:var(--m);font-size:12px}.headBtns{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.b,.tab{border:1px solid var(--ln);background:#fff;border-radius:11px;padding:10px 13px;font-weight:750;cursor:pointer;min-height:44px;color:#172019}.b:focus,.tab:focus,input:focus,select:focus,textarea:focus{outline:3px solid #116b3a26;outline-offset:1px}.pri,.tab.on{background:var(--g);border-color:var(--g);color:#fff}.ghost{background:transparent}.tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0}.p{display:none}.p.on{display:block}.c,.a,.rc{background:#fff;border:1px solid var(--ln);border-radius:14px;padding:14px;margin:9px 0}.g{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}label{font-size:12px;font-weight:700;color:#4b5950;display:flex;flex-direction:column;gap:5px}input,select,textarea{width:100%;border:1px solid var(--ln);border-radius:10px;padding:10px;background:#fff;font:inherit;color:#172019}textarea{min-height:74px;resize:vertical}.a summary{cursor:pointer;font-weight:800;min-height:44px;display:flex;align-items:center;justify-content:space-between;list-style:none}.a summary::-webkit-details-marker{display:none}.a summary:after{content:'▾';color:var(--m)}.a details:not([open]) summary:after{transform:rotate(-90deg)}.body{padding-top:10px}.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}.tag{font-size:11px;background:var(--soft);padding:3px 7px;border-radius:99px}.tag.warn{background:#fff2cf;color:#7e5600}.check{flex-direction:row;align-items:center;min-height:44px;padding-top:8px}.check input{width:20px;height:20px}.hint,.note,.alert{font-size:11px;color:var(--m);background:#f5f8f5;padding:9px;border-radius:9px;margin-top:9px;border:1px solid transparent}.alert{border-color:#efc5c1;background:#fff4f2;color:#84322c}.warning{border-color:#ead89b;background:#fff9e8;color:#805a00}.sum{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0}.k{background:#fff;border:1px solid var(--ln);border-radius:12px;padding:12px}.k span{font-size:10px;color:var(--m);display:block}.k b{font-size:17px}.k.t{background:var(--g);color:#fff}.k.t span{color:#d9ebdf}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.rc{margin:0;display:grid;gap:6px}.rc .top{display:flex;justify-content:space-between;gap:10px}.qty{font-size:17px;font-weight:850}.copyRow{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}.copy{width:100%}.danger{color:var(--red)}.del{margin-top:8px}.hide{display:none!important}.sticky{display:none}.set{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.grp{grid-column:1/-1;border-top:1px solid var(--ln);padding-top:10px;margin:8px 0 0}.areaCards{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px}.projectInfo{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.layoutBar{height:10px;border-radius:999px;overflow:hidden;display:flex;background:#edf0ed;margin-top:8px}.segW{background:#3c7a55}.segWall{background:#9b7d52}.segUV{background:#6b7c94}.legend{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;font-size:10px;color:var(--m)}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}.secTitle{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:14px 0 7px}.secTitle h3{margin:0;font-size:15px}.pill{font-size:10px;background:var(--soft);padding:4px 8px;border-radius:99px;color:#3d5144}.viewOnly .money{display:none}.miniActions{display:flex;gap:7px;flex-wrap:wrap}.installHelp{font-size:11px;color:var(--m);margin-top:6px}.invalidField{border-color:#ce5a50!important;background:#fff8f7!important}dialog{border:0;border-radius:14px;width:min(920px,95vw);padding:0}dialog::backdrop{background:#0008}.dlg{padding:16px;max-height:86vh;overflow:auto}@media(max-width:800px){.g,.set,.projectInfo{grid-template-columns:1fr 1fr}.h h1{font-size:25px}}@media(max-width:650px){body{padding-bottom:max(0px,env(safe-area-inset-bottom))}.w{padding:8px 8px 36px}.h{gap:6px}.h h1{font-size:21px}.h p{font-size:11px}.headBtns{gap:5px}.headBtns .b{padding:8px 9px;min-height:40px;font-size:12px}.tabs{position:sticky;top:0;z-index:20;background:var(--bg);padding:7px 0;margin:8px 0 0}.sticky{display:grid;position:sticky;top:59px;z-index:19;background:#fff;border:1px solid var(--ln);border-radius:12px;padding:9px 11px;margin-bottom:8px;grid-template-columns:1fr auto;box-shadow:0 4px 14px #0001}.sticky span{font-size:10px;color:var(--m)}.sticky b{grid-column:2;grid-row:1/3;color:var(--g);font-size:17px}.sticky small{font-size:9px;color:var(--m);max-width:210px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.g,.set,.cards,.areaCards,.projectInfo{grid-template-columns:1fr}.c{padding:12px}.a{padding:10px 12px}.sum{grid-template-columns:1fr 1fr}.k{padding:9px}.k b{font-size:14px}.k.t{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center}.k.t b{font-size:18px}input,select,textarea{min-height:48px;font-size:16px}.copyRow{grid-template-columns:1fr}.copyRow .b{min-height:50px}.r{flex-wrap:wrap}.layoutBar{height:12px}.secTitle{margin-top:12px}.pill{font-size:9px}}
+</style>
+</head>
+<body>
+<main class="w" id="app">
+<header class="h">
+  <div><small style="color:var(--g);font-weight:800">KALKULATOR MATERIAL</small><h1>Dinding Interior & PVC</h1><p>WPC, Wallboard, UV Marble, mixing, dan PVC plafon.</p></div>
+  <div class="headBtns"><button class="b hide" id="installBtn">Pasang App</button><button class="b" id="newProject">Proyek Baru</button><button class="b" id="setBtn">Pengaturan</button></div>
+</header>
+<div class="tabs"><button class="tab on" data-tab="wall">Dinding Interior</button><button class="tab" data-tab="pvc">PVC Plafon</button></div>
+<div class="sticky" id="sticky"><span>Ringkasan</span><b>—</b><small>Masukkan ukuran</small></div>
+<section class="p on" id="wall">
+  <div class="c">
+    <div class="secTitle"><h3>Data Customer / Proyek</h3><span class="pill">opsional</span></div>
+    <div class="projectInfo">
+      <label>Nama customer<input id="custName" placeholder="Contoh: Pak Andi"></label>
+      <label>Lokasi<input id="custLoc" placeholder="Contoh: Plaju"></label>
+      <label>Tampilan hasil<select id="viewMode"><option value="full">Bahan + Harga + Jasa</option><option value="needs">Kebutuhan saja</option></select></label>
+      <label>Catatan<textarea id="custNote" placeholder="Motif, warna, kondisi dinding, dll"></textarea></label>
+    </div>
+  </div>
+  <div class="c"><div class="r"><h2 style="margin:0;font-size:18px">Area Dinding</h2><span class="m">Bisa tambah beberapa area</span></div><div id="areas"></div><button class="b" id="add">+ Tambah Area</button>
+    <div class="g" style="margin-top:10px"><label>Perhitungan jasa<select id="round"><option value="ceil">Bulatkan ke atas</option><option value="actual">Luas aktual</option></select></label><label>List / siku L (m)<input id="listM" type="number" value="0" min="0" step=".1"></label><label>Tambahan fisher/baut (box)<input id="fisherX" type="number" value="0" min="0"></label><label>Tambahan lain (Rp)<input id="extraW" type="number" value="0" min="0" step="1000"></label></div>
+  </div>
+  <div id="outW"></div>
+</section>
+<section class="p" id="pvc">
+  <div class="c"><div class="r"><h2 style="margin:0;font-size:18px">Ukuran PVC</h2><span class="m">Bahan kecil dihitung otomatis</span></div><div class="g"><label>Panjang (m)<input id="pl" type="number" value="4" step=".01" min="0"></label><label>Lebar (m)<input id="pw" type="number" value="2" step=".01" min="0"></label><label>Jumlah ruangan<input id="pq" type="number" value="1" min="1"></label><label>PVC<select id="ps"><option value="auto">Auto paling hemat</option><option value="4">PVC 4 m</option><option value="6">PVC 6 m</option></select></label></div><div class="g" style="margin-top:10px"><label>Tambahan list (m)<input id="pList" type="number" value="0" min="0" step=".1"></label><label>Tambahan lain (Rp)<input id="extraP" type="number" value="0" min="0" step="1000"></label></div></div><div id="outP"></div>
+</section>
+<div class="installHelp hide" id="iosHelp">iPhone/iPad: buka menu Share di Safari lalu pilih <b>Add to Home Screen</b> untuk memasang kalkulator seperti aplikasi.</div>
+</main>
+<dialog id="dlg"><div class="dlg"><div class="r"><div><small style="color:var(--g);font-weight:800">EDITABLE</small><h2 style="margin:4px 0">Harga & Asumsi</h2></div><button class="b" id="close">Tutup</button></div><p class="m">Harga dan waste dapat disesuaikan. Perubahan tersimpan di perangkat ini.</p><div id="fields" class="set"></div><div class="r" style="margin-top:12px"><button class="b" id="def">Kembalikan Default</button><button class="b pri" id="save">Simpan</button></div></div></dialog>
+<script>
+(() => {
+'use strict';
+const D={
+  wpcPrice:70000,clipPrice:1000,siliconePrice:50000,koreaPrice:15000,fisherPrice:15000,hollowPrice:15000,listPrice:40000,
+  laborNoHollow:60000,laborHollow:70000,wpcLen:3,wpcWidth:.16,shortBuffer:.10,wpcWastePct:0,hollowPerM2:.84,
+  wall40_7Price:150000,wall40_8Price:200000,wall60Price:280000,wallLen:2.9,wallLabor:60000,wallWastePct:5,
+  uv24Price:550000,uv29Price:650000,uvLabor:60000,uvWastePct:5,panelGluePrice:50000,panelGlueCoverage:4,
+  pvc4Price:44000,pvc6Price:66000,pvcLabor:65000,pvcHollowPrice:15000,pvcListPrice:40000,pvcFramePerM2:1.25,pvcWastePct:5,pvcListWastePct:5,
+  pvcScrewPrice:50000,pvcRivetPrice:30000,pvcSiliconePrice:50000,pvcScrewCoverage:25,pvcRivetCoverage:25,pvcSiliconeCoverage:5
+};
+const SETTINGS_KEY='calcS_v5', PROJECT_KEY='calcProject_v5';
+const $=id=>document.getElementById(id), n=v=>{const z=Number(v);return Number.isFinite(z)?Math.max(0,z):0}, pct=v=>n(v)/100;
+const rp=v=>'Rp'+Math.round(n(v)).toLocaleString('id-ID'), fm=v=>(Math.round(n(v)*100)/100).toLocaleString('id-ID');
+let S={...D}; try{S={...D,...JSON.parse(localStorage.getItem(SETTINGS_KEY)||'{}')}}catch(_){S={...D}}
+let next=2;
+const defaultArea=()=>({id:1,name:'Area 1',w:5.5,h:2.8,q:1,hollow:true,mode:'wpc',preset:'custom',wallW:0,uvW:0,wallType:'40-7',uvType:'auto',sections:1,open:true});
+let A=[defaultArea()];
+const modes={wpc:'Full WPC','wpc-wall':'WPC + Wallboard','wpc-uv':'WPC + UV Marble','wpc-wall-uv':'WPC + Wallboard + UV Marble',wall:'Full Wallboard',uv:'Full UV Marble'};
+const presets={custom:'Custom',wpc:'Full WPC','wall-center':'Wallboard tengah + WPC kanan-kiri','uv-center':'UV tengah + WPC kanan-kiri','wall-uv-center':'Wallboard + UV tengah + WPC pinggir',wall:'Full Wallboard',uv:'Full UV Marble'};
+const hasW=m=>m.includes('wall'), hasU=m=>m.includes('uv'), hasP=m=>m.startsWith('wpc');
+function newArea(){return{id:next++,name:'Area '+(A.length+1),w:0,h:0,q:1,hollow:true,mode:'wpc',preset:'custom',wallW:0,uvW:0,wallType:'40-7',uvType:'auto',sections:1,open:true}}
+function clamp(v,min,max){return Math.min(max,Math.max(min,v))}
+function split(a){
+  const total=n(a.w); let wall=0,uv=0;
+  if(a.mode==='wall')return{p:0,w:total,u:0,invalid:false};
+  if(a.mode==='uv')return{p:0,w:0,u:total,invalid:false};
+  if(a.mode==='wpc')return{p:total,w:0,u:0,invalid:false};
+  if(hasW(a.mode)) wall=n(a.wallW); if(hasU(a.mode)) uv=n(a.uvW);
+  const needed=wall+uv, p=total-needed;
+  const invalid=needed>total+1e-9 || (hasW(a.mode)&&wall<=0) || (hasU(a.mode)&&uv<=0) || p<=0;
+  return{p:Math.max(0,p),w:wall,u:uv,invalid,needed,total};
+}
+function bill(area,q){return $('round').value==='ceil'?Math.ceil(area/Math.max(1,q))*Math.max(1,q):area}
+function pieceCount(strips,height,length,wastePct,shortReserve){
+  if(!strips||!height||!length)return{pieces:0,joins:0,cuts:0};
+  let base=0,joins=0,cuts=1;
+  if(height<=length){cuts=Math.max(1,Math.floor(length/height));base=Math.ceil(strips/cuts);if(cuts>1)base=Math.ceil(base*(1+shortReserve));}
+  else{const vertical=Math.ceil(height/length);joins=vertical-1;base=strips*vertical;}
+  return{pieces:Math.ceil(base*(1+pct(wastePct))),joins,cuts};
+}
+function wc(width,h,q,hollow,sections){
+  if(!width||!h)return{a:0,b:0,l:0,boards:0,clips:0,fish:0,hol:0,warn:''};
+  const fields=Math.max(1,Math.round(n(sections)||1));
+  const strips=(Math.ceil(width/S.wpcWidth)+Math.max(0,fields-1))*q;
+  const pc=pieceCount(strips,h,S.wpcLen,S.wpcWastePct,S.shortBuffer);
+  const area=width*h*q,billed=bill(area,q);
+  const seamClips=pc.joins?strips*pc.joins:0;
+  const clips=Math.ceil((strips*(Math.ceil(h)+1)+seamClips)*1.05);
+  return{a:area,b:billed,l:billed*(hollow?S.laborHollow:S.laborNoHollow),rate:hollow?S.laborHollow:S.laborNoHollow,boards:pc.pieces,clips,fish:Math.ceil(width/.75+Math.max(0,fields-1))*q,hol:hollow?Math.ceil(area*S.hollowPerM2):0,warn:h>S.wpcLen?`Tinggi ${fm(h)} m melebihi WPC ${fm(S.wpcLen)} m — perlu sambungan vertikal.`:''};
+}
+function wallc(width,h,q,type){
+  const panelW=type==='60-8'?.6:.4,price=type==='40-8'?S.wall40_8Price:type==='60-8'?S.wall60Price:S.wall40_7Price;
+  if(!width||!h)return{a:0,b:0,l:0,pan:0,price,warn:''};
+  const strips=Math.ceil(width/panelW)*q,pc=pieceCount(strips,h,S.wallLen,S.wallWastePct,0),area=width*h*q,billed=bill(area,q);
+  return{a:area,b:billed,l:billed*S.wallLabor,pan:pc.pieces,price,warn:h>S.wallLen?`Tinggi ${fm(h)} m melebihi Wallboard ${fm(S.wallLen)} m — perlu sambungan.`:''};
+}
+function uvVariant(width,h,q,len,price){
+  if(!width||!h)return{a:0,b:0,l:0,sheets:0,price,len,warn:''};
+  const strips=Math.ceil(width/1.2)*q,pc=pieceCount(strips,h,len,S.uvWastePct,0),area=width*h*q,billed=bill(area,q);
+  return{a:area,b:billed,l:billed*S.uvLabor,sheets:pc.pieces,price,len,cost:pc.pieces*price,warn:h>len?`Tinggi ${fm(h)} m melebihi UV ${fm(len)} m — perlu sambungan.`:''};
+}
+function uvc(width,h,q,type){
+  if(type==='24')return uvVariant(width,h,q,2.4,S.uv24Price);
+  if(type==='29')return uvVariant(width,h,q,2.9,S.uv29Price);
+  const a=uvVariant(width,h,q,2.4,S.uv24Price),b=uvVariant(width,h,q,2.9,S.uv29Price);
+  return a.cost<=b.cost?a:b;
+}
+function ac(a){
+  const width=n(a.w),height=n(a.h),q=Math.max(1,Math.round(n(a.q)||1)),s=split(a);
+  if(s.invalid)return{...a,width,height,q,s,invalid:true,area:width*height*q,l:0,warns:[]};
+  const p=wc(s.p,height,q,a.hollow,a.mode==='wpc'?1:a.sections),w=wallc(s.w,height,q,a.wallType),u=uvc(s.u,height,q,a.uvType);
+  return{...a,width,height,q,s,p,w,u,invalid:false,area:width*height*q,l:p.l+w.l+u.l,warns:[p.warn,w.warn,u.warn].filter(Boolean)};
+}
+function addItem(map,name,qty,unit,price){qty=Math.ceil(n(qty));if(!qty)return;const k=name+'|'+price;if(!map[k])map[k]=[name,0,unit,price];map[k][1]+=qty}
+function calcW(){
+  const base=A.filter(a=>n(a.w)&&n(a.h)); if(!base.length)return null;
+  const aa=base.map(ac),bad=aa.filter(x=>x.invalid); if(bad.length)return{err:'mix',bad,aa};
+  const map={},sum=f=>aa.reduce((t,x)=>t+f(x),0),boards=sum(x=>x.p.boards),panelA=sum(x=>x.w.a+x.u.a);
+  if(boards){addItem(map,'WPC',boards,'keping',S.wpcPrice);addItem(map,'Clip',sum(x=>x.p.clips),'pcs',S.clipPrice);addItem(map,'Silicone WPC',Math.ceil(boards/14),'tube',S.siliconePrice);addItem(map,'Lem Korea',Math.ceil(boards/18),'pcs',S.koreaPrice)}
+  addItem(map,'Fisher/Baut',sum(x=>x.p.fish)+n($('fisherX').value),'box',S.fisherPrice);addItem(map,'Hollow 2×4',sum(x=>x.p.hol),'batang',S.hollowPrice);
+  aa.forEach(x=>{if(x.w.pan)addItem(map,x.wallType==='60-8'?'Wallboard 60×290 8mm':x.wallType==='40-8'?'Wallboard 40×290 8mm':'Wallboard 40×290 7mm',x.w.pan,'keping',x.w.price);if(x.u.sheets)addItem(map,'UV Marble 1,2×'+(x.u.len===2.4?'2,4':'2,9'),x.u.sheets,'lembar',x.u.price)});
+  if(panelA)addItem(map,'Lem / Sealant Panel',Math.ceil(panelA/S.panelGlueCoverage),'tube',S.panelGluePrice);addItem(map,'List / siku L',Math.ceil(n($('listM').value)/4),'batang',S.listPrice);
+  const items=Object.values(map),material=items.reduce((t,x)=>t+x[1]*x[3],0),labor=sum(x=>x.l),extra=n($('extraW').value);
+  return{aa,items,area:sum(x=>x.area),material,labor,extra,total:material+labor+extra,warns:aa.flatMap(x=>x.warns)};
+}
+function presetApply(a,val){
+  a.preset=val;const w=n(a.w);
+  if(val==='custom')return;
+  if(val==='wpc'){a.mode='wpc';a.wallW=0;a.uvW=0;a.sections=1}
+  if(val==='wall'){a.mode='wall';a.wallW=0;a.uvW=0;a.sections=1}
+  if(val==='uv'){a.mode='uv';a.wallW=0;a.uvW=0;a.sections=1}
+  if(val==='wall-center'){a.mode='wpc-wall';a.sections=2;if(w)a.wallW=Math.min(2,Math.max(.4,Math.round(w*.4/.4)*.4));a.uvW=0}
+  if(val==='uv-center'){a.mode='wpc-uv';a.sections=2;if(w)a.uvW=Math.min(1.2,Math.max(1.2,Math.round(w*.3/1.2)*1.2));a.wallW=0}
+  if(val==='wall-uv-center'){a.mode='wpc-wall-uv';a.sections=2;if(w){a.wallW=Math.min(1.2,Math.max(.4,Math.round(w*.25/.4)*.4));a.uvW=Math.min(1.2,Math.max(.6,Math.round(w*.25/1.2)*1.2))}}
+}
+function opt(obj,val){return Object.entries(obj).map(([k,v])=>`<option value="${k}" ${String(val)===k?'selected':''}>${v}</option>`).join('')}
+function layoutBar(s){const total=s.total||1;return `<div class="layoutBar">${s.p?`<span class="segW" style="width:${100*s.p/total}%"></span>`:''}${s.w?`<span class="segWall" style="width:${100*s.w/total}%"></span>`:''}${s.u?`<span class="segUV" style="width:${100*s.u/total}%"></span>`:''}</div><div class="legend">${s.p?`<span><i class="dot segW"></i>WPC ${fm(s.p)}m</span>`:''}${s.w?`<span><i class="dot segWall"></i>Wallboard ${fm(s.w)}m</span>`:''}${s.u?`<span><i class="dot segUV"></i>UV ${fm(s.u)}m</span>`:''}</div>`}
+function renderA(){
+  $('areas').innerHTML=A.map(a=>{const s=split(a),invalid=s.invalid&&n(a.w)>0;return `<div class="a" data-id="${a.id}"><details ${a.open?'open':''}><summary><div>${esc(a.name)}<div class="tags"><span class="tag">${modes[a.mode]}</span>${n(a.w)&&n(a.h)?`<span class="tag">${fm(a.w)}×${fm(a.h)} m</span>`:''}${invalid?'<span class="tag warn">Periksa mixing</span>':''}</div></div></summary><div class="body">
+  <div class="g">
+    <label>Nama area<input data-k="name" value="${escAttr(a.name)}"></label><label>Lebar dinding (m)<input data-k="w" type="number" min="0" step=".01" value="${a.w}"></label><label>Tinggi (m)<input data-k="h" type="number" min="0" step=".01" value="${a.h}"></label><label>Jumlah area<input data-k="q" type="number" min="1" step="1" value="${a.q}"></label>
+    <label>Preset layout<select data-k="preset">${opt(presets,a.preset||'custom')}</select></label><label>Komposisi<select data-k="mode">${opt(modes,a.mode)}</select></label>
+    ${hasW(a.mode)?`<label>Tipe Wallboard<select data-k="wallType"><option value="40-7" ${a.wallType==='40-7'?'selected':''}>40×290 7mm</option><option value="40-8" ${a.wallType==='40-8'?'selected':''}>40×290 8mm</option><option value="60-8" ${a.wallType==='60-8'?'selected':''}>60×290 8mm</option></select></label>`:''}
+    ${hasU(a.mode)?`<label>Tipe UV<select data-k="uvType"><option value="auto" ${a.uvType==='auto'?'selected':''}>Auto paling hemat</option><option value="24" ${a.uvType==='24'?'selected':''}>1,2×2,4</option><option value="29" ${a.uvType==='29'?'selected':''}>1,2×2,9</option></select></label>`:''}
+    ${hasW(a.mode)&&a.mode!=='wall'?`<label>Lebar Wallboard (m)<input data-k="wallW" class="${invalid?'invalidField':''}" type="number" min="0" step=".01" value="${a.wallW}"></label>`:''}
+    ${hasU(a.mode)&&a.mode!=='uv'?`<label>Lebar UV (m)<input data-k="uvW" class="${invalid?'invalidField':''}" type="number" min="0" step=".01" value="${a.uvW}"></label>`:''}
+    ${a.mode.startsWith('wpc-')?`<label>Posisi WPC<select data-k="sections"><option value="1" ${String(a.sections)==='1'?'selected':''}>1 bidang</option><option value="2" ${String(a.sections)==='2'?'selected':''}>2 sisi / kanan-kiri</option></select></label>`:''}
+  </div>
+  ${hasP(a.mode)?`<label class="check"><input data-k="hollow" type="checkbox" ${a.hollow?'checked':''}>Pakai hollow — jasa ${rp(a.hollow?S.laborHollow:S.laborNoHollow)}/m²</label>`:''}
+  ${n(a.w)?layoutBar(s):''}
+  ${invalid?`<div class="alert">Pembagian material tidak valid. Total lebar Wallboard + UV harus lebih kecil dari lebar dinding dan setiap material yang dipilih harus punya lebar.</div>`:`<div class="hint">${s.p?`WPC ${fm(s.p)} m`:''}${s.w?`${s.p?' · ':''}Wallboard ${fm(s.w)} m`:''}${s.u?`${s.p||s.w?' · ':''}UV ${fm(s.u)} m`:''}</div>`}
+  ${A.length>1?`<button class="b danger del" data-del="${a.id}">Hapus area</button>`:''}
+</div></details></div>`}).join('');
+  document.querySelectorAll('.a details').forEach(d=>d.addEventListener('toggle',()=>{const a=A.find(x=>String(x.id)===d.closest('.a').dataset.id);if(a){a.open=d.open;saveProject()}}));
+  document.querySelectorAll('[data-k]').forEach(e=>{const fn=()=>{const box=e.closest('.a'),a=A.find(x=>String(x.id)===box.dataset.id),k=e.dataset.k;if(!a)return;a[k]=k==='hollow'?e.checked:e.value;if(k==='preset'){presetApply(a,e.value);renderA()}else if(k==='mode'){a.preset='custom';if(a.mode.startsWith('wpc-'))a.sections=2;renderA()}else if(k==='w'&&a.preset!=='custom'){presetApply(a,a.preset);renderA()}renderW();saveProject()};e.addEventListener('input',fn);e.addEventListener('change',fn)});
+  document.querySelectorAll('[data-del]').forEach(b=>b.addEventListener('click',()=>{A=A.filter(x=>String(x.id)!==b.dataset.del);renumberNames();renderA();renderW();saveProject()}));
+}
+function esc(s){return String(s??'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}function escAttr(s){return esc(s).replace(/"/g,'&quot;')}
+function card(x,needs){return `<div class="rc"><div class="top"><b>${esc(x[0])}</b><span class="qty">${fm(x[1])} ${x[2]}</span></div>${needs?'':`<div class="r m money"><span>${rp(x[3])}/${x[2]}</span><b>${rp(x[1]*x[3])}</b></div>`}</div>`}
+function copyText(text,btn){const ok=()=>{const old=btn.textContent;btn.textContent='✓ Tersalin';setTimeout(()=>btn.textContent=old,1300)};if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(ok).catch(()=>fallbackCopy(text,ok))}else fallbackCopy(text,ok)}
+function fallbackCopy(text,ok){const ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');ok()}catch(_){}ta.remove()}
+function headerLines(title){const out=[title],name=$('custName').value.trim(),loc=$('custLoc').value.trim(),note=$('custNote').value.trim();if(name)out.push(`Customer: ${name}`);if(loc)out.push(`Lokasi: ${loc}`);if(note)out.push(`Catatan: ${note}`);return out}
+function areaMaterialLines(x,withPrice=true,prefix='  '){
+  const out=[];
+  if(x.p.boards)out.push(`${prefix}WPC: ${fm(x.p.boards)} keping${withPrice?` × ${rp(S.wpcPrice)} = ${rp(x.p.boards*S.wpcPrice)}`:''}`);
+  if(x.w.pan)out.push(`${prefix}${x.wallType==='60-8'?'Wallboard 60×290 8mm':x.wallType==='40-8'?'Wallboard 40×290 8mm':'Wallboard 40×290 7mm'}: ${fm(x.w.pan)} keping${withPrice?` × ${rp(x.w.price)} = ${rp(x.w.pan*x.w.price)}`:''}`);
+  if(x.u.sheets)out.push(`${prefix}UV Marble 1,2×${x.u.len===2.4?'2,4':'2,9'}: ${fm(x.u.sheets)} lembar${withPrice?` × ${rp(x.u.price)} = ${rp(x.u.sheets*x.u.price)}`:''}`);
+  if(x.p.hol)out.push(`${prefix}Hollow 2×4: ${fm(x.p.hol)} batang${withPrice?` × ${rp(S.hollowPrice)} = ${rp(x.p.hol*S.hollowPrice)}`:''}`);
+  return out;
+}
+function areaLaborLines(x,prefix='  '){
+  const out=[];
+  if(x.p.b)out.push(`${prefix}Jasa WPC: ${fm(x.p.b)} m² × ${rp(x.p.rate)}/m² = ${rp(x.p.l)}`);
+  if(x.w.b)out.push(`${prefix}Jasa Wallboard: ${fm(x.w.b)} m² × ${rp(S.wallLabor)}/m² = ${rp(x.w.l)}`);
+  if(x.u.b)out.push(`${prefix}Jasa UV Marble: ${fm(x.u.b)} m² × ${rp(S.uvLabor)}/m² = ${rp(x.u.l)}`);
+  return out;
+}
+function areaCopyBlock(x,withPrice=true,withLabor=true){
+  const out=[`• ${x.name}: ${fm(x.width)}×${fm(x.height)} m × ${x.q} — ${modes[x.mode]}${hasP(x.mode)?` — ${x.hollow?'pakai hollow':'tanpa hollow'}`:''}`];
+  out.push(...areaMaterialLines(x,withPrice));
+  if(withPrice&&withLabor)out.push(...areaLaborLines(x));
+  return out;
+}
+function textInternalW(r){
+  const lines=headerLines('DETAIL INTERNAL - DINDING INTERIOR');
+  lines.push('','RINCIAN PER AREA');
+  r.aa.forEach(x=>{lines.push(...areaCopyBlock(x,true,true),'')});
+  lines.push('RINCIAN MATERIAL PROYEK',...r.items.map(x=>`• ${x[0]}: ${fm(x[1])} ${x[2]} × ${rp(x[3])}/${x[2]} = ${rp(x[1]*x[3])}`),'',`TOTAL BAHAN: ${rp(r.material)}`,`TOTAL JASA: ${rp(r.labor)}`,r.extra?`TAMBAHAN: ${rp(r.extra)}`:'',`TOTAL KESELURUHAN: ${rp(r.total)}`);
+  return lines.filter((v,i,a)=>v!==''||a[i-1]!=='').join('\n').trim();
+}
+function textCustomerW(r){
+  const needs=$('viewMode').value==='needs',lines=headerLines('ESTIMASI KEBUTUHAN DINDING INTERIOR');
+  lines.push('','RINCIAN PER AREA');
+  r.aa.forEach(x=>{lines.push(...areaCopyBlock(x,!needs,!needs),'')});
+  lines.push('RINCIAN MATERIAL PROYEK');
+  lines.push(...r.items.map(x=>needs?`• ${x[0]}: ${fm(x[1])} ${x[2]}`:`• ${x[0]}: ${fm(x[1])} ${x[2]} × ${rp(x[3])}/${x[2]} = ${rp(x[1]*x[3])}`));
+  if(!needs)lines.push('',`Estimasi bahan: ${rp(r.material)}`,`Estimasi jasa: ${rp(r.labor)}`,r.extra?`Tambahan: ${rp(r.extra)}`:'',`Estimasi total: ${rp(r.total)}`);
+  lines.push('','*Estimasi dapat berubah setelah pengecekan kondisi lapangan dan detail finishing.*');
+  return lines.filter((v,i,a)=>v!==''||a[i-1]!=='').join('\n').trim();
+}
+function areaCardDetails(x,needs){
+  const mat=[];
+  if(x.p.boards)mat.push(`<div class="m">WPC: <b>${fm(x.p.boards)} keping</b>${needs?'':` × ${rp(S.wpcPrice)} = <b>${rp(x.p.boards*S.wpcPrice)}</b>`}</div>`);
+  if(x.w.pan)mat.push(`<div class="m">Wallboard: <b>${fm(x.w.pan)} keping</b>${needs?'':` × ${rp(x.w.price)} = <b>${rp(x.w.pan*x.w.price)}</b>`}</div>`);
+  if(x.u.sheets)mat.push(`<div class="m">UV Marble: <b>${fm(x.u.sheets)} lembar</b>${needs?'':` × ${rp(x.u.price)} = <b>${rp(x.u.sheets*x.u.price)}</b>`}</div>`);
+  if(x.p.hol)mat.push(`<div class="m">Hollow: <b>${fm(x.p.hol)} batang</b>${needs?'':` × ${rp(S.hollowPrice)} = <b>${rp(x.p.hol*S.hollowPrice)}</b>`}</div>`);
+  const lab=[];
+  if(!needs&&x.p.b)lab.push(`<div class="m">Jasa WPC: ${fm(x.p.b)} m² × ${rp(x.p.rate)} = <b>${rp(x.p.l)}</b></div>`);
+  if(!needs&&x.w.b)lab.push(`<div class="m">Jasa Wallboard: ${fm(x.w.b)} m² × ${rp(S.wallLabor)} = <b>${rp(x.w.l)}</b></div>`);
+  if(!needs&&x.u.b)lab.push(`<div class="m">Jasa UV: ${fm(x.u.b)} m² × ${rp(S.uvLabor)} = <b>${rp(x.u.l)}</b></div>`);
+  return mat.join('')+lab.join('');
+}
+function renderW(){
+  const r=calcW(),needs=$('viewMode').value==='needs';$('app').classList.toggle('viewOnly',needs);
+  if(!r){$('outW').innerHTML='';stick();return}
+  if(r.err){$('outW').innerHTML=`<div class="c alert"><b>Periksa pembagian material</b><div style="margin-top:5px">${r.bad.map(x=>`${esc(x.name)}: lebar WPC/Wallboard/UV belum valid.`).join('<br>')}</div></div>`;stick();return}
+  const warnings=[...new Set(r.warns)];
+  $('outW').innerHTML=`<div class="sum"><div class="k"><span>Luas</span><b>${fm(r.area)} m²</b></div><div class="k money"><span>Bahan</span><b>${rp(r.material)}</b></div><div class="k money"><span>Jasa</span><b>${rp(r.labor)}</b></div><div class="k t money"><span>Total</span><b>${rp(r.total)}</b></div></div>
+    ${warnings.length?`<div class="alert warning"><b>Catatan sambungan material</b><br>${warnings.map(esc).join('<br>')}</div>`:''}
+    <div class="copyRow"><button class="b pri" id="copyCustomer">Salin untuk Customer</button><button class="b" id="copyInternal">Salin Detail Internal</button></div>
+    <div class="c"><div class="secTitle"><h3>Detail Material</h3><span class="pill">${r.items.length} item</span></div><div class="cards">${r.items.map(x=>card(x,needs)).join('')}</div>
+      <div class="secTitle"><h3>Rincian Area</h3><span class="pill">${r.aa.length} area</span></div><div class="areaCards">${r.aa.map(x=>`<div class="rc"><b>${esc(x.name)}</b><div class="m">${fm(x.width)}×${fm(x.height)} m × ${x.q} · ${modes[x.mode]}</div>${areaCardDetails(x,needs)}${needs?'':`<b class="money">Total jasa area ${rp(x.l)}</b>`}</div>`).join('')}</div>
+    </div>`;
+  $('copyCustomer').addEventListener('click',()=>copyText(textCustomerW(r),$('copyCustomer')));$('copyInternal').addEventListener('click',()=>copyText(textInternalW(r),$('copyInternal')));stick();
+}
+function pvcOption(L,W,q,stock){
+  let best=null;for(const [span,across] of [[L,W],[W,L]]){if(span>stock)continue;const strips=Math.ceil(across/.2)*q,cuts=Math.max(1,Math.floor(stock/span)),raw=Math.ceil(strips/cuts),sheets=Math.ceil(raw*(1+pct(S.pvcWastePct))),cost=sheets*(stock===4?S.pvc4Price:S.pvc6Price),o={stock,sheets,cuts,cost,waste:sheets*stock-strips*span};if(!best||o.cost<best.cost)best=o}return best;
+}
+function calcP(){
+  const L=n($('pl').value),W=n($('pw').value),q=Math.max(1,Math.round(n($('pq').value)||1));if(!L||!W)return null;const m=$('ps').value,ops=[];if(m==='auto'||m==='4')ops.push(pvcOption(L,W,q,4));if(m==='auto'||m==='6')ops.push(pvcOption(L,W,q,6));const o=ops.filter(Boolean).sort((a,b)=>a.cost-b.cost)[0];if(!o)return{err:1};
+  const area=L*W*q,perim=2*(L+W)*q+n($('pList').value),items=[];items.push([`PVC ${o.stock}m`,o.sheets,'keping',o.stock===4?S.pvc4Price:S.pvc6Price]);items.push(['Hollow 2×4',Math.ceil(area*S.pvcFramePerM2),'batang',S.pvcHollowPrice]);items.push(['List PVC',Math.ceil((perim*(1+pct(S.pvcListWastePct)))/4),'batang',S.pvcListPrice]);items.push(['Sekrup PVC/Gypsum',Math.max(1,Math.ceil(area/S.pvcScrewCoverage)),'box',S.pvcScrewPrice]);items.push(['Rivet',Math.max(1,Math.ceil(area/S.pvcRivetCoverage)),'bungkus',S.pvcRivetPrice]);items.push(['Silicone PVC',Math.max(1,Math.ceil(area/S.pvcSiliconeCoverage)),'tube',S.pvcSiliconePrice]);
+  const material=items.reduce((t,x)=>t+x[1]*x[3],0),labor=area*S.pvcLabor,extra=n($('extraP').value);return{o,area,items,material,labor,extra,total:material+labor+extra,L,W,q};
+}
+function textInternalP(r){return [...headerLines('DETAIL INTERNAL - PVC PLAFON'),`Ukuran: ${fm(r.L)}×${fm(r.W)} m × ${r.q}`,`Pilihan: PVC ${r.o.stock} m`,'',...r.items.map(x=>`${x[0]}: ${x[1]} ${x[2]} × ${rp(x[3])} = ${rp(x[1]*x[3])}`),'',`Bahan: ${rp(r.material)}`,`Jasa: ${rp(r.labor)}`,r.extra?`Tambahan: ${rp(r.extra)}`:'',`TOTAL: ${rp(r.total)}`].filter(Boolean).join('\n')}
+function textCustomerP(r){const needs=$('viewMode').value==='needs',lines=headerLines('ESTIMASI KEBUTUHAN PVC PLAFON');lines.push(`Ukuran: ${fm(r.L)}×${fm(r.W)} m × ${r.q}`,'',...r.items.map(x=>`• ${x[0]}: ${x[1]} ${x[2]}`));if(!needs)lines.push('',`Estimasi bahan: ${rp(r.material)}`,`Estimasi jasa: ${rp(r.labor)}`,`Estimasi total: ${rp(r.total)}`);lines.push('','*Estimasi dapat berubah setelah pengecekan kondisi lapangan.*');return lines.join('\n')}
+function renderP(){
+  const r=calcP(),needs=$('viewMode').value==='needs';if(!r){$('outP').innerHTML='';stick();return}if(r.err){$('outP').innerHTML='<div class="c alert">Bentang lebih dari 6 meter. Perlu pembagian bentang atau sistem sambungan khusus.</div>';stick();return}
+  $('outP').innerHTML=`<div class="sum"><div class="k"><span>Luas</span><b>${fm(r.area)} m²</b></div><div class="k money"><span>Bahan</span><b>${rp(r.material)}</b></div><div class="k money"><span>Jasa</span><b>${rp(r.labor)}</b></div><div class="k t money"><span>Total</span><b>${rp(r.total)}</b></div></div><div class="copyRow"><button class="b pri" id="copyPCustomer">Salin untuk Customer</button><button class="b" id="copyPInternal">Salin Detail Internal</button></div><div class="c"><div class="note">PVC ${r.o.stock} m · ${r.o.sheets} keping · ${r.o.cuts} potongan/keping · waste PVC ${fm(S.pvcWastePct)}%</div><div class="cards">${r.items.map(x=>card(x,needs)).join('')}</div></div>`;
+  $('copyPCustomer').addEventListener('click',()=>copyText(textCustomerP(r),$('copyPCustomer')));$('copyPInternal').addEventListener('click',()=>copyText(textInternalP(r),$('copyPInternal')));stick();
+}
+function stick(){
+  const wall=$('wall').classList.contains('on'),r=wall?calcW():calcP(),box=$('sticky');if(!r||r.err){box.querySelector('b').textContent='—';box.querySelector('small').textContent=r&&r.err?'Periksa input':'Masukkan ukuran';return}
+  if($('viewMode').value==='needs'){box.querySelector('b').textContent=`${r.items.length} item`;box.querySelector('small').textContent=`Luas ${fm(r.area)} m² · kebutuhan bahan`}
+  else{box.querySelector('b').textContent=rp(r.total);box.querySelector('small').textContent=`Bahan ${rp(r.material)} · Jasa ${rp(r.labor)}`}
+}
+function renumberNames(){A.forEach((a,i)=>{if(/^Area \d+$/.test(a.name))a.name='Area '+(i+1)})}
+function collectProject(){return{A,next,tab:document.querySelector('.tab.on')?.dataset.tab||'wall',custName:$('custName').value,custLoc:$('custLoc').value,custNote:$('custNote').value,viewMode:$('viewMode').value,round:$('round').value,listM:$('listM').value,fisherX:$('fisherX').value,extraW:$('extraW').value,pl:$('pl').value,pw:$('pw').value,pq:$('pq').value,ps:$('ps').value,pList:$('pList').value,extraP:$('extraP').value}}
+function saveProject(){try{localStorage.setItem(PROJECT_KEY,JSON.stringify(collectProject()))}catch(_){}}
+function loadProject(){try{const p=JSON.parse(localStorage.getItem(PROJECT_KEY)||'null');if(!p)return;A=Array.isArray(p.A)&&p.A.length?p.A.map((a,i)=>({...newArea(),...a,id:Number(a.id)||i+1,name:String(a.name||`Area ${i+1}`),w:n(a.w),h:n(a.h),q:Math.max(1,Math.round(n(a.q)||1)),wallW:n(a.wallW),uvW:n(a.uvW),sections:Math.max(1,Math.round(n(a.sections)||1))})):[defaultArea()];next=Math.max(Number(p.next)||2,...A.map(a=>Number(a.id)||0))+1;['custName','custLoc','custNote','viewMode','round','listM','fisherX','extraW','pl','pw','pq','ps','pList','extraP'].forEach(id=>{if(p[id]!==undefined&&$(id))$(id).value=p[id]});if(p.tab==='pvc'){switchTab('pvc')}}catch(_){}}
+function switchTab(tab){document.querySelectorAll('.tab,.p').forEach(x=>x.classList.remove('on'));const b=document.querySelector(`.tab[data-tab="${tab}"]`);if(b)b.classList.add('on');$(tab)?.classList.add('on');stick()}
+const F=[
+ ['WPC','wpcPrice','Harga WPC'],['WPC','laborNoHollow','Jasa WPC tanpa hollow /m²'],['WPC','laborHollow','Jasa WPC pakai hollow /m²'],['WPC','hollowPrice','Harga hollow'],['WPC','wpcWastePct','Waste tambahan WPC (%)'],['WPC','shortBuffer','Cadangan potongan pendek WPC (desimal; 0.10 = 10%)'],
+ ['Wallboard','wall40_7Price','Wallboard 40×290 7mm'],['Wallboard','wall40_8Price','Wallboard 40×290 8mm'],['Wallboard','wall60Price','Wallboard 60×290 8mm'],['Wallboard','wallLabor','Jasa Wallboard /m²'],['Wallboard','wallWastePct','Waste Wallboard (%)'],
+ ['UV Marble','uv24Price','UV 1,2×2,4'],['UV Marble','uv29Price','UV 1,2×2,9'],['UV Marble','uvLabor','Jasa UV /m²'],['UV Marble','uvWastePct','Waste UV (%)'],['Panel','panelGluePrice','Lem/sealant panel'],['Panel','panelGlueCoverage','Coverage lem panel (m²/tube)'],
+ ['PVC','pvc4Price','PVC 4m'],['PVC','pvc6Price','PVC 6m'],['PVC','pvcLabor','Jasa PVC /m²'],['PVC','pvcFramePerM2','Hollow per m² PVC'],['PVC','pvcWastePct','Waste PVC (%)'],['PVC','pvcListWastePct','Waste list PVC (%)'],['PVC','pvcScrewPrice','Harga sekrup/box'],['PVC','pvcRivetPrice','Harga rivet/bungkus'],['PVC','pvcSiliconePrice','Harga silicone/tube'],['PVC','pvcScrewCoverage','Coverage sekrup (m²/box)'],['PVC','pvcRivetCoverage','Coverage rivet (m²/bungkus)'],['PVC','pvcSiliconeCoverage','Coverage silicone PVC (m²/tube)']
+];
+function fields(){let last='';$('fields').innerHTML=F.map(([g,k,t])=>`${g!==last?(last=g,`<h3 class="grp">${g}</h3>`):''}<label>${t}<input data-s="${k}" type="number" step="any" value="${S[k]}"></label>`).join('')}
+function bind(){
+  $('add').addEventListener('click',()=>{A.forEach(a=>a.open=false);A.push(newArea());renderA();renderW();saveProject()});
+  ['round','listM','fisherX','extraW','custName','custLoc','custNote','viewMode'].forEach(id=>{$(id).addEventListener('input',()=>{renderW();renderP();saveProject()});$(id).addEventListener('change',()=>{renderW();renderP();saveProject()})});
+  ['pl','pw','pq','ps','pList','extraP'].forEach(id=>{$(id).addEventListener('input',()=>{renderP();saveProject()});$(id).addEventListener('change',()=>{renderP();saveProject()})});
+  document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{switchTab(b.dataset.tab);saveProject()}));
+  $('setBtn').addEventListener('click',()=>{fields();$('dlg').showModal()});$('close').addEventListener('click',()=>$('dlg').close());
+  $('save').addEventListener('click',()=>{document.querySelectorAll('[data-s]').forEach(x=>S[x.dataset.s]=n(x.value));try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(S))}catch(_){}$('dlg').close();renderA();renderW();renderP()});
+  $('def').addEventListener('click',()=>{if(!confirm('Kembalikan semua harga dan asumsi ke default?'))return;S={...D};localStorage.removeItem(SETTINGS_KEY);fields();renderA();renderW();renderP()});
+  $('newProject').addEventListener('click',()=>{if(!confirm('Mulai proyek baru? Input proyek saat ini akan dihapus, tetapi Pengaturan harga tetap tersimpan.'))return;localStorage.removeItem(PROJECT_KEY);A=[defaultArea()];next=2;$('custName').value='';$('custLoc').value='';$('custNote').value='';$('viewMode').value='full';$('round').value='ceil';$('listM').value=0;$('fisherX').value=0;$('extraW').value=0;$('pl').value=4;$('pw').value=2;$('pq').value=1;$('ps').value='auto';$('pList').value=0;$('extraP').value=0;switchTab('wall');renderA();renderW();renderP();saveProject()});
+}
+let deferredPrompt=null;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;$('installBtn').classList.remove('hide')});$('installBtn').addEventListener('click',async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;$('installBtn').classList.add('hide')});window.addEventListener('appinstalled',()=>{$('installBtn').classList.add('hide')});
+const isiOS=/iphone|ipad|ipod/i.test(navigator.userAgent);if(isiOS&&!window.matchMedia('(display-mode: standalone)').matches)$('iosHelp').classList.remove('hide');
+if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+loadProject();bind();renderA();renderW();renderP();stick();
+})();
+</script>
+</body>
+</html>
