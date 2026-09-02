@@ -1,9 +1,13 @@
-# Kalkulator Interior Mobile V5.2
+# Kalkulator Interior Mobile V5.3
 
 Perubahan utama:
-- Kombinasi WPC + Wallboard / UV dihitung otomatis berdasarkan lebar dinding.
-- Tidak perlu memasukkan lebar Wallboard / UV manual.
-- Wallboard/UV mengikuti modul asli (40 cm, 60 cm, 1.2 m).
-- Sistem menjaga WPC kanan-kiri dan otomatis mengurangi kebutuhan WPC sesuai area panel aksen.
-- Rekomendasi menampilkan jumlah modul lebar, sisa WPC per sisi, dan estimasi kebutuhan keping/lembar berdasarkan tinggi, sambungan, dan waste.
-- Copy hasil mencantumkan layout otomatis per area.
+- Kombinasi WPC + Wallboard / UV dihitung otomatis dari ukuran dinding.
+- WPC otomatis berkurang sesuai lebar yang dipakai Wallboard/UV.
+- Optimasi potongan panjang: sisa 10 cm / 20 cm dari panel atau WPC dapat dipakai untuk sambungan bidang lain bila mencukupi.
+- Sambungan tidak lagi otomatis dihitung sebagai 1 batang/keping penuh per jalur.
+- WPC yang tingginya masih di bawah panjang stok tetap dibuat sebagai jalur utuh; sistem tidak memaksa sambungan hanya demi menghemat batang.
+- Waste dihitung setelah susunan potongan optimal, sehingga offcut yang sudah tersedia dapat menyerap waste tanpa otomatis menambah keping.
+- Copy Customer dan Detail Internal mengikuti rekomendasi otomatis per area, menampilkan jumlah material dan optimasi meter lari.
+- Pembulatan jasa dilakukan per luas area total, tidak membulatkan masing-masing material secara terpisah.
+
+Upload seluruh isi folder ini ke Vercel sebagai static site.
