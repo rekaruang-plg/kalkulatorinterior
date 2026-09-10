@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-title" content="Kalkulator Interior">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<title>Kalkulator Interior & PVC V5.6</title>
+<title>Kalkulator Interior & PVC V5.8</title>
 <style>
 :root{--g:#116b3a;--bg:#f5f7f5;--ln:#dce5de;--m:#66736a;--red:#a73932;--amber:#9a6700;--soft:#edf4ef;--blue:#245b8a}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:#172019}.w{max-width:1080px;margin:auto;padding:14px 14px 60px}.h,.r{display:flex;justify-content:space-between;gap:10px;align-items:center}.h{align-items:flex-start}.h h1{font-size:28px;margin:3px 0}.h p,.m{color:var(--m);font-size:12px}.headBtns{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.b,.tab{border:1px solid var(--ln);background:#fff;border-radius:11px;padding:10px 13px;font-weight:750;cursor:pointer;min-height:44px;color:#172019}.b:focus,.tab:focus,input:focus,select:focus,textarea:focus{outline:3px solid #116b3a26;outline-offset:1px}.pri,.tab.on{background:var(--g);border-color:var(--g);color:#fff}.ghost{background:transparent}.tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0}.p{display:none}.p.on{display:block}.c,.a,.rc{background:#fff;border:1px solid var(--ln);border-radius:14px;padding:14px;margin:9px 0}.g{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}label{font-size:12px;font-weight:700;color:#4b5950;display:flex;flex-direction:column;gap:5px}input,select,textarea{width:100%;border:1px solid var(--ln);border-radius:10px;padding:10px;background:#fff;font:inherit;color:#172019}textarea{min-height:74px;resize:vertical}.a summary{cursor:pointer;font-weight:800;min-height:44px;display:flex;align-items:center;justify-content:space-between;list-style:none}.a summary::-webkit-details-marker{display:none}.a summary:after{content:'▾';color:var(--m)}.a details:not([open]) summary:after{transform:rotate(-90deg)}.body{padding-top:10px}.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}.tag{font-size:11px;background:var(--soft);padding:3px 7px;border-radius:99px}.tag.warn{background:#fff2cf;color:#7e5600}.check{flex-direction:row;align-items:center;min-height:44px;padding-top:8px}.check input{width:20px;height:20px}.hint,.note,.alert{font-size:11px;color:var(--m);background:#f5f8f5;padding:9px;border-radius:9px;margin-top:9px;border:1px solid transparent}.alert{border-color:#efc5c1;background:#fff4f2;color:#84322c}.warning{border-color:#ead89b;background:#fff9e8;color:#805a00}.sum{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0}.k{background:#fff;border:1px solid var(--ln);border-radius:12px;padding:12px}.k span{font-size:10px;color:var(--m);display:block}.k b{font-size:17px}.k.t{background:var(--g);color:#fff}.k.t span{color:#d9ebdf}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.rc{margin:0;display:grid;gap:6px}.rc .top{display:flex;justify-content:space-between;gap:10px}.qty{font-size:17px;font-weight:850}.copyRow{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}.copy{width:100%}.danger{color:var(--red)}.del{margin-top:8px}.hide{display:none!important}.sticky{display:none}.set{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.grp{grid-column:1/-1;border-top:1px solid var(--ln);padding-top:10px;margin:8px 0 0}.areaCards{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px}.projectInfo{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.layoutBar{height:10px;border-radius:999px;overflow:hidden;display:flex;background:#edf0ed;margin-top:8px}.segW{background:#3c7a55}.segWall{background:#9b7d52}.segUV{background:#6b7c94}.legend{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;font-size:10px;color:var(--m)}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}.secTitle{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:14px 0 7px}.secTitle h3{margin:0;font-size:15px}.pill{font-size:10px;background:var(--soft);padding:4px 8px;border-radius:99px;color:#3d5144}.viewOnly .money{display:none}.miniActions{display:flex;gap:7px;flex-wrap:wrap}.installHelp{font-size:11px;color:var(--m);margin-top:6px}.invalidField{border-color:#ce5a50!important;background:#fff8f7!important}.autoRec{margin-top:10px;border:1px solid var(--ln);background:#f7faf7;border-radius:11px;padding:10px}.autoRec b{display:block;margin-bottom:4px}.autoRec .line{font-size:12px;color:#4f5f55;line-height:1.5}.autoRec .strong{color:var(--g);font-weight:800}.autoRec .pieces{margin-top:5px;font-size:11px;color:var(--m)}.frameViz{position:relative;width:100%;max-width:520px;margin:10px auto 5px;border-radius:12px;overflow:hidden;background:#3c7a55;border:1px solid var(--ln);min-height:120px}.frameViz .uvInner{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#6b7c94;border:2px solid #fff8;border-radius:4px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:800;text-align:center;padding:5px}.frameViz .wallInner{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#9b7d52;border:2px solid #fff6;border-radius:5px}.frameViz .wallInner .uvInner{z-index:2}.frameLegend{text-align:center;font-size:10px;color:var(--m);margin-top:4px}.frameLegend b{color:var(--g)}dialog{border:0;border-radius:14px;width:min(920px,95vw);padding:0}dialog::backdrop{background:#0008}.dlg{padding:16px;max-height:86vh;overflow:auto}@media(max-width:800px){.g,.set,.projectInfo{grid-template-columns:1fr 1fr}.h h1{font-size:25px}}@media(max-width:650px){body{padding-bottom:max(0px,env(safe-area-inset-bottom))}.w{padding:8px 8px 36px}.h{gap:6px}.h h1{font-size:21px}.h p{font-size:11px}.headBtns{gap:5px}.headBtns .b{padding:8px 9px;min-height:40px;font-size:12px}.tabs{position:sticky;top:0;z-index:20;background:var(--bg);padding:7px 0;margin:8px 0 0}.sticky{display:grid;position:sticky;top:59px;z-index:19;background:#fff;border:1px solid var(--ln);border-radius:12px;padding:9px 11px;margin-bottom:8px;grid-template-columns:1fr auto;box-shadow:0 4px 14px #0001}.sticky span{font-size:10px;color:var(--m)}.sticky b{grid-column:2;grid-row:1/3;color:var(--g);font-size:17px}.sticky small{font-size:9px;color:var(--m);max-width:210px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.g,.set,.cards,.areaCards,.projectInfo{grid-template-columns:1fr}.c{padding:12px}.a{padding:10px 12px}.sum{grid-template-columns:1fr 1fr}.k{padding:9px}.k b{font-size:14px}.k.t{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center}.k.t b{font-size:18px}input,select,textarea{min-height:48px;font-size:16px}.copyRow{grid-template-columns:1fr}.copyRow .b{min-height:50px}.r{flex-wrap:wrap}.layoutBar{height:12px}.secTitle{margin-top:12px}.pill{font-size:9px}}
 </style>
@@ -62,6 +62,7 @@ const D={
   hollowLen:4,hollowSpacing:.5,hollowWastePct:10,screwBlackCoverageHollow:15,concreteNailCoverageHollow:6,
   // WALLBOARD
   wall40_7Price:150000,wall40_8Price:200000,wall60Price:280000,wall40_7Cost:0,wall40_8Cost:0,wall60Cost:0,
+  wallListTPrice:85000,wallListTCost:75000,
   wallLen:2.9,wallLabor:60000,wallLaborCost:0,wallWastePct:5,
   // UV MARBLE + PANEL
   uv24Price:550000,uv29Price:650000,uv24Cost:0,uv29Cost:0,uvLabor:60000,uvLaborCost:0,uvWastePct:5,
@@ -77,11 +78,11 @@ const $=id=>document.getElementById(id), n=v=>{const z=Number(v);return Number.i
 const rp=v=>'Rp'+Math.round(n(v)).toLocaleString('id-ID'), fm=v=>(Math.round(n(v)*100)/100).toLocaleString('id-ID');
 let S={...D}; try{S={...D,...JSON.parse(localStorage.getItem(SETTINGS_KEY)||'{}')}}catch(_){S={...D}}
 let next=2;
-const defaultArea=()=>({id:1,name:'Area 1',w:5.5,h:2.8,q:1,hollow:true,mode:'wpc',wallType:'40-7',uvType:'auto',open:true});
+const defaultArea=()=>({id:1,name:'Area 1',w:5.5,h:2.8,q:1,hollow:true,mode:'wpc',wallType:'40-7',uvType:'auto',listT:false,open:true});
 let A=[defaultArea()];
 const modes={wpc:'Full WPC','wpc-wall':'WPC + Wallboard','wpc-uv':'WPC + UV Marble','wpc-wall-uv':'WPC + Wallboard + UV Marble',wall:'Full Wallboard',uv:'Full UV Marble'};
 const hasW=m=>m.includes('wall'), hasU=m=>m.includes('uv'), hasP=m=>m.startsWith('wpc');
-function newArea(){return{id:next++,name:'Area '+(A.length+1),w:0,h:0,q:1,hollow:true,mode:'wpc',wallType:'40-7',uvType:'auto',open:true}}
+function newArea(){return{id:next++,name:'Area '+(A.length+1),w:0,h:0,q:1,hollow:true,mode:'wpc',wallType:'40-7',uvType:'auto',listT:false,open:true}}
 function clamp(v,min,max){return Math.min(max,Math.max(min,v))}
 function wallModule(a){return a.wallType==='60-8'?.6:.4}
 function autoSplit(a){
@@ -350,6 +351,12 @@ function laborCostArea(x){
   const raw=x.p.a*(x.hollow?S.laborHollowCost:S.laborNoHollowCost)+x.w.a*S.wallLaborCost+x.u.a*S.uvLaborCost;
   const avg=x.area?raw/x.area:0;return raw+Math.max(0,x.billedArea-x.area)*avg;
 }
+function wallListTQty(x){
+  if(!x||!x.listT||!x.w||!x.w.pan)return 0;
+  // Aturan lapangan: jumlah List T mengikuti jumlah Wallboard + 1 per bidang fisik.
+  // Jika satu record mewakili beberapa area identik (q > 1), masing-masing bidang mendapat +1.
+  return Math.ceil(n(x.w.pan))+Math.max(1,Math.round(n(x.q)||1));
+}
 function calcW(){
   const base=A.filter(a=>n(a.w)&&n(a.h)); if(!base.length)return null;
   const aa=base.map(ac),bad=aa.filter(x=>x.invalid); if(bad.length)return{err:'mix',bad,aa};
@@ -386,7 +393,13 @@ function calcW(){
     addItem(map,'Paku beton 2”',Math.ceil(hollows/Math.max(1,S.concreteNailCoverageHollow)),'box',S.concreteNailPrice,S.concreteNailCost);
   }
   aa.forEach(x=>{
-    if(x.w.pan){const nm=x.wallType==='60-8'?'Wallboard 60×290 8mm':x.wallType==='40-8'?'Wallboard 40×290 8mm':'Wallboard 40×290 7mm';const c=x.wallType==='60-8'?S.wall60Cost:x.wallType==='40-8'?S.wall40_8Cost:S.wall40_7Cost;addItem(map,nm,x.w.pan,'keping',x.w.price,c)}
+    if(x.w.pan){
+      const nm=x.wallType==='60-8'?'Wallboard 60×290 8mm':x.wallType==='40-8'?'Wallboard 40×290 8mm':'Wallboard 40×290 7mm';
+      const c=x.wallType==='60-8'?S.wall60Cost:x.wallType==='40-8'?S.wall40_8Cost:S.wall40_7Cost;
+      addItem(map,nm,x.w.pan,'keping',x.w.price,c);
+      const listTQty=wallListTQty(x);
+      if(listTQty)addItem(map,'List T Wallboard',listTQty,'batang',S.wallListTPrice,S.wallListTCost);
+    }
     if(x.u.sheets){const is24=x.u.len===2.4;addItem(map,'UV Marble 1,2×'+(is24?'2,4':'2,9'),x.u.sheets,'lembar',x.u.price,is24?S.uv24Cost:S.uv29Cost)}
   });
   if(panelA)addItem(map,'Lem / Sealant Panel',Math.ceil(panelA/S.panelGlueCoverage),'tube',S.panelGluePrice,S.panelGlueCost);
@@ -432,13 +445,14 @@ function autoRecText(a,s){
   return `<div class="autoRec"><b>Rekomendasi kombinasi otomatis</b><div class="line">${bits.join(' · ')}</div><div class="pieces">${pieces}</div></div>`;
 }
 function renderA(){
-  $('areas').innerHTML=A.map(a=>{const s=split(a),invalid=s.invalid&&n(a.w)>0;return `<div class="a" data-id="${a.id}"><details ${a.open?'open':''}><summary><div>${esc(a.name)}<div class="tags"><span class="tag">${modes[a.mode]}</span>${n(a.w)&&n(a.h)?`<span class="tag">${fm(a.w)}×${fm(a.h)} m</span>`:''}${invalid?'<span class="tag warn">Cek ukuran</span>':''}</div></div></summary><div class="body">
+  $('areas').innerHTML=A.map(a=>{const s=split(a),invalid=s.invalid&&n(a.w)>0;return `<div class="a" data-id="${a.id}"><details ${a.open?'open':''}><summary><div>${esc(a.name)}<div class="tags"><span class="tag">${modes[a.mode]}</span>${a.listT&&hasW(a.mode)?'<span class="tag">List T</span>':''}${n(a.w)&&n(a.h)?`<span class="tag">${fm(a.w)}×${fm(a.h)} m</span>`:''}${invalid?'<span class="tag warn">Cek ukuran</span>':''}</div></div></summary><div class="body">
   <div class="g">
     <label>Nama area<input data-k="name" value="${escAttr(a.name)}"></label><label>Lebar dinding (m)<input data-k="w" type="number" min="0" step=".01" value="${a.w}"></label><label>Tinggi (m)<input data-k="h" type="number" min="0" step=".01" value="${a.h}"></label><label>Jumlah area<input data-k="q" type="number" min="1" step="1" value="${a.q}"></label>
     <label>Komposisi<select data-k="mode">${opt(modes,a.mode)}</select></label>
     ${hasW(a.mode)?`<label>Tipe Wallboard<select data-k="wallType"><option value="40-7" ${a.wallType==='40-7'?'selected':''}>40×290 7mm</option><option value="40-8" ${a.wallType==='40-8'?'selected':''}>40×290 8mm</option><option value="60-8" ${a.wallType==='60-8'?'selected':''}>60×290 8mm</option></select></label>`:''}
     ${hasU(a.mode)?`<label>Tipe UV<select data-k="uvType"><option value="auto" ${a.uvType==='auto'?'selected':''}>Auto paling hemat</option><option value="24" ${a.uvType==='24'?'selected':''}>1,2×2,4</option><option value="29" ${a.uvType==='29'?'selected':''}>1,2×2,9</option></select></label>`:''}
   </div>
+  ${hasW(a.mode)?`<label class="check"><input data-k="listT" type="checkbox" ${a.listT?'checked':''}>Pakai List T Wallboard — otomatis jumlah Wallboard + 1${Math.max(1,Math.round(n(a.q)||1))>1?' per bidang':''}</label>`:''}
   ${hasP(a.mode)?`<label class="check"><input data-k="hollow" type="checkbox" ${a.hollow?'checked':''}>Pakai hollow — jasa ${rp(a.hollow?S.laborHollow:S.laborNoHollow)}/m²</label>`:''}
   ${n(a.w)?(a.mode==='wpc-wall-uv'&&n(a.h)?(()=>{const mix=tripleMixChoice(a,s,Math.max(1,Math.round(n(a.q)||1)));return triplePreview(a,s,mix.geom,mix.u)})():a.mode==='wpc-uv'&&n(a.h)?(()=>{const mix=mixedUVChoice(a,s,Math.max(1,Math.round(n(a.q)||1)));return framePreview(a,s,mix.geom,mix.u)})():layoutBar(s)):''}
   ${autoRecText(a,s)}
@@ -446,7 +460,7 @@ function renderA(){
 </div></details></div>`}).join('');
   document.querySelectorAll('.a details').forEach(d=>d.addEventListener('toggle',()=>{const a=A.find(x=>String(x.id)===d.closest('.a').dataset.id);if(a){a.open=d.open;saveProject()}}));
   document.querySelectorAll('[data-k]').forEach(e=>{
-    const update=(rerender=false)=>{const box=e.closest('.a'),a=A.find(x=>String(x.id)===box.dataset.id),k=e.dataset.k;if(!a)return;a[k]=k==='hollow'?e.checked:e.value;if(rerender){renderA()}renderW();saveProject()};
+    const update=(rerender=false)=>{const box=e.closest('.a'),a=A.find(x=>String(x.id)===box.dataset.id),k=e.dataset.k;if(!a)return;a[k]=(k==='hollow'||k==='listT')?e.checked:e.value;if(rerender){renderA()}renderW();saveProject()};
     e.addEventListener('input',()=>update(false));
     e.addEventListener('change',()=>update(true));
   });
@@ -462,7 +476,11 @@ function wallLabel(x){return x.wallType==='60-8'?'Wallboard 60×290 8mm':x.wallT
 function areaMaterialLines(x,withPrice=true,prefix='  '){
   const out=[];
   if(x.p.boards)out.push(`${prefix}WPC area: ±${fm(x.p.boards)} keping${withPrice?` × ${rp(S.wpcPrice)} = ±${rp(x.p.boards*S.wpcPrice)}`:''} (estimasi area; pembelian final lihat total proyek)`);
-  if(x.w.pan)out.push(`${prefix}${wallLabel(x)}: ${fm(x.w.pan)} keping${withPrice?` × ${rp(x.w.price)} = ${rp(x.w.pan*x.w.price)}`:''}`);
+  if(x.w.pan){
+    out.push(`${prefix}${wallLabel(x)}: ${fm(x.w.pan)} keping${withPrice?` × ${rp(x.w.price)} = ${rp(x.w.pan*x.w.price)}`:''}`);
+    const listTQty=wallListTQty(x);
+    if(listTQty)out.push(`${prefix}List T Wallboard: ${fm(listTQty)} batang${withPrice?` × ${rp(S.wallListTPrice)} = ${rp(listTQty*S.wallListTPrice)}`:''} (Wallboard ${fm(x.w.pan)} + ${Math.max(1,Math.round(n(x.q)||1))})`);
+  }
   if(x.u.sheets)out.push(`${prefix}UV Marble 1,2×${x.u.len===2.4?'2,4':'2,9'}: ${fm(x.u.sheets)} lembar${withPrice?` × ${rp(x.u.price)} = ${rp(x.u.sheets*x.u.price)}`:''}`);
   if(x.p.hollowLinear)out.push(`${prefix}Rangka hollow area: ±${fm(x.p.hollowLinear)} m lari (jumlah batang final dihitung gabungan seluruh proyek)`);
   return out;
@@ -543,7 +561,11 @@ function textCustomerW(r){
 function areaCardDetails(x,needs){
   const mat=[];
   if(x.p.boards)mat.push(`<div class="m">WPC area: <b>±${fm(x.p.boards)} keping</b>${needs?'':` × ${rp(S.wpcPrice)} = <b>±${rp(x.p.boards*S.wpcPrice)}</b>`} · final pembelian digabung proyek</div>`);
-  if(x.w.pan)mat.push(`<div class="m">${wallLabel(x)}: <b>${fm(x.w.pan)} keping</b>${needs?'':` × ${rp(x.w.price)} = <b>${rp(x.w.pan*x.w.price)}</b>`}</div>`);
+  if(x.w.pan){
+    mat.push(`<div class="m">${wallLabel(x)}: <b>${fm(x.w.pan)} keping</b>${needs?'':` × ${rp(x.w.price)} = <b>${rp(x.w.pan*x.w.price)}</b>`}</div>`);
+    const listTQty=wallListTQty(x);
+    if(listTQty)mat.push(`<div class="m">List T Wallboard: <b>${fm(listTQty)} batang</b>${needs?'':` × ${rp(S.wallListTPrice)} = <b>${rp(listTQty*S.wallListTPrice)}</b>`} · rumus ${fm(x.w.pan)} Wallboard + ${Math.max(1,Math.round(n(x.q)||1))}</div>`);
+  }
   if(x.u.sheets)mat.push(`<div class="m">UV Marble 1,2×${x.u.len===2.4?'2,4':'2,9'}: <b>${fm(x.u.sheets)} lembar</b>${needs?'':` × ${rp(x.u.price)} = <b>${rp(x.u.sheets*x.u.price)}</b>`}</div>`);
   if(x.p.hollowLinear)mat.push(`<div class="m">Rangka hollow area: <b>±${fm(x.p.hollowLinear)} m lari</b> · batang final digabung di total proyek</div>`);
   const cuts=[];
@@ -593,14 +615,14 @@ function stick(){
 function renumberNames(){A.forEach((a,i)=>{if(/^Area \d+$/.test(a.name))a.name='Area '+(i+1)})}
 function collectProject(){return{A,next,tab:document.querySelector('.tab.on')?.dataset.tab||'wall',custName:$('custName').value,custLoc:$('custLoc').value,custNote:$('custNote').value,viewMode:$('viewMode').value,round:$('round').value,listM:$('listM').value,fisherX:$('fisherX').value,extraW:$('extraW').value,extraModalW:$('extraModalW').value,pl:$('pl').value,pw:$('pw').value,pq:$('pq').value,ps:$('ps').value,pList:$('pList').value,extraP:$('extraP').value,extraModalP:$('extraModalP').value}}
 function saveProject(){try{localStorage.setItem(PROJECT_KEY,JSON.stringify(collectProject()))}catch(_){}}
-function loadProject(){try{const p=JSON.parse(localStorage.getItem(PROJECT_KEY)||'null');if(!p)return;A=Array.isArray(p.A)&&p.A.length?p.A.map((a,i)=>({...newArea(),...a,id:Number(a.id)||i+1,name:String(a.name||`Area ${i+1}`),w:n(a.w),h:n(a.h),q:Math.max(1,Math.round(n(a.q)||1)),wallType:['40-7','40-8','60-8'].includes(a.wallType)?a.wallType:'40-7',uvType:['auto','24','29'].includes(a.uvType)?a.uvType:'auto'})):[defaultArea()];next=Math.max(Number(p.next)||2,...A.map(a=>Number(a.id)||0))+1;['custName','custLoc','custNote','viewMode','round','listM','fisherX','extraW','extraModalW','pl','pw','pq','ps','pList','extraP','extraModalP'].forEach(id=>{if(p[id]!==undefined&&$(id))$(id).value=p[id]});if(p.tab==='pvc'){switchTab('pvc')}}catch(_){}}
+function loadProject(){try{const p=JSON.parse(localStorage.getItem(PROJECT_KEY)||'null');if(!p)return;A=Array.isArray(p.A)&&p.A.length?p.A.map((a,i)=>({...newArea(),...a,id:Number(a.id)||i+1,name:String(a.name||`Area ${i+1}`),w:n(a.w),h:n(a.h),q:Math.max(1,Math.round(n(a.q)||1)),wallType:['40-7','40-8','60-8'].includes(a.wallType)?a.wallType:'40-7',uvType:['auto','24','29'].includes(a.uvType)?a.uvType:'auto',listT:Boolean(a.listT)})):[defaultArea()];next=Math.max(Number(p.next)||2,...A.map(a=>Number(a.id)||0))+1;['custName','custLoc','custNote','viewMode','round','listM','fisherX','extraW','extraModalW','pl','pw','pq','ps','pList','extraP','extraModalP'].forEach(id=>{if(p[id]!==undefined&&$(id))$(id).value=p[id]});if(p.tab==='pvc'){switchTab('pvc')}}catch(_){}}
 function switchTab(tab){document.querySelectorAll('.tab,.p').forEach(x=>x.classList.remove('on'));const b=document.querySelector(`.tab[data-tab="${tab}"]`);if(b)b.classList.add('on');$(tab)?.classList.add('on');stick()}
 const F=[
  ['WPC - Harga Jual','wpcPrice','WPC /keping'],['WPC - Harga Jual','clipPrice','Clip /pcs'],['WPC - Harga Jual','siliconeWhitePrice','Silicone putih /botol'],['WPC - Harga Jual','siliconeClearPrice','Silicone bening /botol'],['WPC - Harga Jual','koreaPrice','Lem Korea /pcs'],['WPC - Harga Jual','hollowPrice','Hollow 2×4 /batang'],['WPC - Harga Jual','fisherPrice','Fisher/Baut /kantong (isi 25 pcs)'],['WPC - Harga Jual','screwBlackPrice','Sekrup hitam 1” /box'],['WPC - Harga Jual','concreteNailPrice','Paku beton 2” /box'],
  ['WPC - Harga Modal','wpcCost','Modal WPC /keping'],['WPC - Harga Modal','clipCost','Modal clip /pcs'],['WPC - Harga Modal','siliconeWhiteCost','Modal silicone putih /botol'],['WPC - Harga Modal','siliconeClearCost','Modal silicone bening /botol'],['WPC - Harga Modal','koreaCost','Modal Lem Korea /pcs'],['WPC - Harga Modal','hollowCost','Modal hollow /batang'],['WPC - Harga Modal','fisherCost','Modal Fisher/Baut /kantong (isi 25 pcs)'],['WPC - Harga Modal','screwBlackCost','Modal sekrup hitam 1” /box'],['WPC - Harga Modal','concreteNailCost','Modal paku beton 2” /box'],
  ['WPC - Jasa','laborNoHollow','Harga jasa tanpa hollow /m²'],['WPC - Jasa','laborHollow','Harga jasa pakai hollow /m²'],['WPC - Jasa','laborNoHollowCost','Modal tukang tanpa hollow /m²'],['WPC - Jasa','laborHollowCost','Modal tukang pakai hollow /m²'],
  ['WPC - Asumsi Lapangan','wpcProjectReservePct','Cadangan pembelian WPC setelah optimasi (%)'],['WPC - Asumsi Lapangan','clipBufferPct','Buffer clip (%)'],['WPC - Asumsi Lapangan','fisherBagSize','Isi Fisher/Baut per kantong (pcs)'],['WPC - Asumsi Lapangan','fisherBufferPct','Buffer Fisher/Baut di atas jumlah clip tanpa hollow (%)'],['WPC - Asumsi Lapangan','siliconeCoverageBoards','1 botol silicone untuk berapa WPC'],['WPC - Asumsi Lapangan','siliconeClearPct','Porsi silicone bening (%)'],['WPC - Asumsi Lapangan','koreaCoverageBoards','1 Lem Korea untuk berapa WPC'],['WPC - Asumsi Lapangan','hollowLen','Panjang hollow /batang (m)'],['WPC - Asumsi Lapangan','hollowSpacing','Jarak baris hollow (m)'],['WPC - Asumsi Lapangan','hollowWastePct','Waste hollow (%)'],['WPC - Asumsi Lapangan','screwBlackCoverageHollow','1 box sekrup untuk berapa hollow'],['WPC - Asumsi Lapangan','concreteNailCoverageHollow','1 box paku beton untuk berapa hollow'],
- ['Wallboard - Jual','wall40_7Price','Wallboard 40×290 7mm'],['Wallboard - Jual','wall40_8Price','Wallboard 40×290 8mm'],['Wallboard - Jual','wall60Price','Wallboard 60×290 8mm'],['Wallboard - Modal','wall40_7Cost','Modal Wallboard 40×290 7mm'],['Wallboard - Modal','wall40_8Cost','Modal Wallboard 40×290 8mm'],['Wallboard - Modal','wall60Cost','Modal Wallboard 60×290 8mm'],['Wallboard - Jasa','wallLabor','Harga jasa Wallboard /m²'],['Wallboard - Jasa','wallLaborCost','Modal jasa Wallboard /m²'],['Wallboard - Asumsi','wallWastePct','Waste Wallboard (%)'],
+ ['Wallboard - Jual','wall40_7Price','Wallboard 40×290 7mm'],['Wallboard - Jual','wall40_8Price','Wallboard 40×290 8mm'],['Wallboard - Jual','wall60Price','Wallboard 60×290 8mm'],['Wallboard - Jual','wallListTPrice','List T Wallboard /batang'],['Wallboard - Modal','wall40_7Cost','Modal Wallboard 40×290 7mm'],['Wallboard - Modal','wall40_8Cost','Modal Wallboard 40×290 8mm'],['Wallboard - Modal','wall60Cost','Modal Wallboard 60×290 8mm'],['Wallboard - Modal','wallListTCost','Modal List T Wallboard /batang'],['Wallboard - Jasa','wallLabor','Harga jasa Wallboard /m²'],['Wallboard - Jasa','wallLaborCost','Modal jasa Wallboard /m²'],['Wallboard - Asumsi','wallWastePct','Waste Wallboard (%)'],
  ['UV Marble - Jual','uv24Price','UV 1,2×2,4'],['UV Marble - Jual','uv29Price','UV 1,2×2,9'],['UV Marble - Modal','uv24Cost','Modal UV 1,2×2,4'],['UV Marble - Modal','uv29Cost','Modal UV 1,2×2,9'],['UV Marble - Jasa','uvLabor','Harga jasa UV /m²'],['UV Marble - Jasa','uvLaborCost','Modal jasa UV /m²'],['UV Marble - Asumsi','uvWastePct','Waste UV (%)'],['Panel - Jual','panelGluePrice','Lem/sealant panel'],['Panel - Modal','panelGlueCost','Modal lem/sealant panel'],['Panel - Asumsi','panelGlueCoverage','Coverage lem panel (m²/tube)'],
  ['PVC - Jual','pvc4Price','PVC 4m'],['PVC - Jual','pvc6Price','PVC 6m'],['PVC - Modal','pvc4Cost','Modal PVC 4m'],['PVC - Modal','pvc6Cost','Modal PVC 6m'],['PVC - Jasa','pvcLabor','Harga jasa PVC /m²'],['PVC - Jasa','pvcLaborCost','Modal jasa PVC /m²'],['PVC - Jual','pvcHollowPrice','Harga hollow PVC'],['PVC - Modal','pvcHollowCost','Modal hollow PVC'],['PVC - Jual','pvcListPrice','Harga list PVC'],['PVC - Modal','pvcListCost','Modal list PVC'],['PVC - Jual','pvcScrewPrice','Harga sekrup/box'],['PVC - Modal','pvcScrewCost','Modal sekrup/box'],['PVC - Jual','pvcRivetPrice','Harga rivet/bungkus'],['PVC - Modal','pvcRivetCost','Modal rivet/bungkus'],['PVC - Jual','pvcSiliconePrice','Harga silicone/tube'],['PVC - Modal','pvcSiliconeCost','Modal silicone/tube'],['PVC - Asumsi','pvcFramePerM2','Hollow per m² PVC'],['PVC - Asumsi','pvcWastePct','Waste PVC (%)'],['PVC - Asumsi','pvcListWastePct','Waste list PVC (%)'],['PVC - Asumsi','pvcScrewCoverage','Coverage sekrup (m²/box)'],['PVC - Asumsi','pvcRivetCoverage','Coverage rivet (m²/bungkus)'],['PVC - Asumsi','pvcSiliconeCoverage','Coverage silicone PVC (m²/tube)']
 ];
